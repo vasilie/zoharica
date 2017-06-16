@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 16, 2017 at 10:21 PM
+-- Generation Time: Jun 16, 2017 at 11:39 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -38,8 +38,8 @@ CREATE TABLE IF NOT EXISTS `glasao` (
 INSERT INTO `glasao` (`id`, `ime`) VALUES
 (0, ''),
 (0, ''),
-(1, 'Omladin'),
-(1, 'Omladin');
+(1, 'Gospodja Bo'),
+(1, 'Gospodja Bo');
 
 -- --------------------------------------------------------
 
@@ -72,7 +72,7 @@ INSERT INTO `vreme` (`id`, `vreme`) VALUES
 
 CREATE TABLE IF NOT EXISTS `vremeg` (
   `id` int(11) NOT NULL,
-  `vreme` time NOT NULL
+  `vreme` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -80,7 +80,7 @@ CREATE TABLE IF NOT EXISTS `vremeg` (
 --
 
 INSERT INTO `vremeg` (`id`, `vreme`) VALUES
-(1, '838:59:59');
+(1, 1497648937);
 
 -- --------------------------------------------------------
 
@@ -101,12 +101,12 @@ CREATE TABLE IF NOT EXISTS `zohari` (
 
 INSERT INTO `zohari` (`id`, `ime`, `poeni`) VALUES
 (1, 'Nesica', 1),
-(2, 'Dzoni', 8),
-(3, 'Vasilie', 3),
-(4, 'Manu', 8),
-(5, 'Adam', 10),
+(2, 'Dzoni', 2),
+(3, 'Vasilie', 2),
+(4, 'Manu', 1),
+(5, 'Adam', 2),
 (6, 'Joca', 4),
-(7, 'Esteban', 4);
+(7, 'Esteban', 2);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

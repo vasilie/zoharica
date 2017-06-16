@@ -262,6 +262,7 @@
 		//-------------- Konekcija SQL, uzima informacije iz zohari, i ubacuje u  promenljive--------------------		$servername = "localhost";
 		$username = "root";
 		$password = "winstonblue";
+		$password = "";
 
 		// Create connection
 		$db = new mysqli($servername, $username, $password);
@@ -610,7 +611,7 @@ if (isset($_POST{"glasanje"})) {	$zohari=$_POST{"glasanje"};
 				?>
 				</span>
 			</p>
-			<p>Vreme glasanja: <?php echo $vremeg;//napravi tabelu sa imenom vremeg, id i vreme su kolone ?></p>
+			<p>Vreme glasanja: <?php echo date(' H:i:s d.m.Y.',$vremeg);//napravi tabelu sa imenom vremeg, id i vreme su kolone ?></p>
 		</div>
 
 
