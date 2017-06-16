@@ -1,0 +1,797 @@
+#cont_loptica {
+	position: absolute;
+	width: 700px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	top:320px;
+	left: 240px;
+	opacity: 0;
+
+}
+.loptica {
+	background-color: white;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius:10px;
+	width: 4px;
+	height: 4px;
+	position: relative;
+	float: left;
+	opacity: 0;
+	transition:color 3s;
+	z-index: 999;
+}
+
+
+#lopta1 {
+	top: 40px;
+	left: 262px;
+	
+}
+#lopta2 {
+	top: 19px;
+	left: 237px;
+}
+#lopta3 {
+	top: 19px;
+	left: 240px;
+}
+#lopta4 {
+	top: 26px;
+	left: 222px;
+}
+#lopta5 {
+	top: 19px;
+	left: 218px;
+}
+#lopta6 {
+	top: 33px;
+	left: 214px;
+}
+#lopta7 {
+	top: 19px;
+	left: 196px;
+}
+#lopta8 {
+	top: 26px;
+	left: 192px;
+}
+#lopta9 {
+	top: 33px;
+	left: 188px;
+}
+#lopta10 {
+	top: 40px;
+	left: 184px;
+}
+#lopta11 {
+	top: 26px;
+	left: 173px;
+}
+#lopta12 {
+	top: 26px;
+	left: 162px;
+}
+#lopta13 {
+	top: 19px;
+	left: 158px;
+}
+#lopta14 {
+	top: 19px;
+	left: 266px;
+}
+#lopta15 {
+	top: 33px;
+	left: 150px;
+}
+#lopta16 {
+	top: 40px;
+	left: 146px;
+}
+#lopta17 {
+	top:40px;
+	left: 170px;
+}
+#lopta18 {
+	top:40px;
+	left: 180px;
+}
+#lopta19 {
+	top: 40px;
+	left: 169px;
+}
+#lopta20 {
+	top:40px;
+	left: 200px;
+}
+#lopta21 {
+	top: 40px;
+	left: 189px;
+}
+#lopta22 {
+	top:40px;
+	left: 220px;
+}
+#lopta23 {
+	top: 26px;
+	left: 153px;
+}
+#lopta24 {
+	top: 40px;
+	left: 198px;
+}
+#lopta25 {
+	top: 40px;
+	left: 201px;
+}
+#lopta26 {
+	top: 19px;
+	left: 225px;
+}
+#lopta27 {
+	top: 19px;
+	left: 158px;
+}
+#lopta28 {
+	top: 33px;
+	left: 210px;
+}
+#lopta29 {
+	top: 19px;
+	left: 220px;
+}
+#lopta30 {
+	top: 40px;
+	left: 209px;
+}
+#lopta31 {
+	top: 40px;
+	left: 226px;
+}
+#lopta32 {
+	top: 26px;
+	left: 138px;
+}
+#lopta33 {
+	top: 26px;
+	left: 190px;
+}
+#lopta34 {
+	top: 26px;
+	left: 158px;
+}
+#lopta35 {
+	top: 40px;
+	left: 182px;
+}
+#lopta36 {
+	top: 26px;
+	left: 192px;
+}
+#lopta37 {
+	top: 19px;
+	left: 146px;
+}
+#lopta38 {
+	top: 33px;
+	left: 184px;
+}
+
+@-webkit-keyframes anim_about_a {
+
+	from {}
+	to{
+		top:12px;
+		left:220px;
+	}
+}
+@-webkit-keyframes anim_about_m {
+
+	from {}
+	to{
+		top:66px;
+		left:167px;
+	}
+}
+@-webkit-keyframes anim_about_c {
+
+	from {}
+	to{
+		top:12px;
+		left:220px;
+	}
+}
+@-webkit-keyframes anim_about_b {
+
+	from {}
+	to{
+		top:12px;
+		left:232px;
+	}
+}
+@-webkit-keyframes anim_about_d {
+
+	from {}
+	to{
+		top:12px;
+		left:199px;
+	}
+}
+@-webkit-keyframes anim_about_e {
+
+	from {}
+	to{
+		top:14px;
+		left:187px;
+	}
+}
+@-webkit-keyframes anim_about_f {
+
+	from {}
+	to{
+		top:21px;
+		left:176px;
+	}
+}
+@-webkit-keyframes anim_about_i {
+
+	from {}
+	to{
+		top:30px;
+		left:162px;
+	}
+}
+@-webkit-keyframes anim_about_h {
+
+	from {}
+	to{
+		top:12px;
+		left:217px;
+	}
+}
+@-webkit-keyframes anim_about_j {
+
+	from {}
+	to{
+		top:59px;
+		left:161px;
+	}
+}
+@-webkit-keyframes anim_about_g {
+
+	from {}
+	to{
+		top:39px;
+		left:170px;
+	}
+}
+
+
+@-webkit-keyframes anim_about_k {
+
+	from {}
+	to{
+		top:65px;
+		left:165px;
+	}
+}
+@-webkit-keyframes anim_about_n {
+
+	from {}
+	to{
+		top:67px;
+		left:172px;
+	}
+}
+@-webkit-keyframes anim_about_q {
+
+	from {}
+	to{
+		top:83px;
+		left:166px;
+	}
+}
+@-webkit-keyframes anim_about_l {
+
+	from {}
+	to{
+		top:50px;
+		left:151px;
+	}
+}
+@-webkit-keyframes anim_about_o {
+
+	from {}
+	to{
+		top:75px;
+		left:169px;
+	}
+}
+@-webkit-keyframes anim_about_p {
+
+	from {}
+	to{
+		top:77px;
+		left:168px;
+	}
+}
+@-webkit-keyframes anim_about_r {
+
+	from {}
+	to{
+		top:65px;
+		left:175px;
+	}
+}
+@-webkit-keyframes anim_about_s {
+
+	from {}
+	to{
+		top:66px;
+		left:171px;
+	}
+}
+@-webkit-keyframes anim_about_u {
+
+	from {}
+	to{
+		top:12px;
+		left:184px;
+	}
+}
+@-webkit-keyframes anim_about_t {
+
+	from {}
+	to{
+		top:71px;
+		left:169px;
+	}
+}
+
+@-webkit-keyframes anim_about_v {
+
+	from {}
+	to{
+		top:65px;
+		left:178px;
+	}
+}
+
+@-webkit-keyframes anim_about_w {
+
+	from {}
+	to{
+		top:12px;
+		left:190px;
+	}
+}
+@-webkit-keyframes anim_about_x {
+
+	from {}
+	to{
+		top:12px;
+		left:188px;
+	}
+}
+@-webkit-keyframes anim_about_y {
+
+	from {}
+	to{
+		top:12px;
+		left:183px;
+	}
+}
+@-webkit-keyframes anim_about_z {
+
+	from {}
+	to{
+		top:65px;
+		left:173px;
+	}
+}
+@-webkit-keyframes anim_about_aa {
+
+	from {}
+	to{
+		top:65px;
+		left:172px;
+	}
+}
+@-webkit-keyframes anim_about_ab {
+
+	from {}
+	to{
+		top:65px;
+		left:184px;
+	}
+}
+@-webkit-keyframes anim_about_ac {
+
+	from {}
+	to{
+		top:12px;
+		left:185px;
+	}
+}
+@-webkit-keyframes anim_about_ad {
+
+	from {}
+	to{
+		top:65px;
+		left:186px;
+	}
+}
+@-webkit-keyframes anim_about_ae {
+
+	from {}
+	to{
+		top:14px;
+		left:189px;
+	}
+}
+@-webkit-keyframes anim_about_af {
+
+	from {}
+	to{
+		top:28px;
+		left:189px;
+	}
+}
+@-webkit-keyframes anim_about_ag {
+
+	from {}
+	to{
+		top:20px;
+		left:191px;
+	}
+}
+@-webkit-keyframes anim_about_ah {
+
+	from {}
+	to{
+		top:37px;
+		left:186px;
+	}
+}
+@-webkit-keyframes anim_about_ai {
+
+	from {}
+	to{
+		top:62px;
+		left:173px;
+	}
+}
+@-webkit-keyframes anim_about_al {
+
+	from {}
+	to{
+		top:47px;
+		left:174px;
+	}
+}
+@-webkit-keyframes anim_about_ak {
+
+	from {}
+	to{
+		top:55px;
+		left:176px;
+	}
+}
+@-webkit-keyframes anim_about_aj {
+
+	from {}
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+
+
+
+@-webkit-keyframes anim_skills_a {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_b {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_c {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_d {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_e {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_f {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_g {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_h {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_j {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_k {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_l {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_m {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_n {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_o {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_p {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_q {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_r {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_s {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_t {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_u {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_v {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_w {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_x {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_y {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_z {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_aa {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_ab {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_ac {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_ad {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_ae {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_af {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_ag {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_ah {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_ai {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_aj {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_ak {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_al {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+@-webkit-keyframes anim_skills_am {
+
+	
+	to{
+		top:12px;
+		left:106px;
+	}
+}
+

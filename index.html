@@ -1,0 +1,2114 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vasilije Milenkovic - CV</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="jquery.js"></script>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="animacijeloptice.css" type="text/css">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script type="text/javascript">
+		
+		var sirina = window.innerWidth;
+		console.log(sirina);
+
+
+
+		
+		function uzicija(){
+			var sirina = window.innerWidth;
+			var dopuna=(sirina-1024)/2;
+			
+
+			document.getElementById("naslovi").style.left=dopuna+20+"px";
+			document.getElementById("pozadina").style.left=dopuna+20+"px";
+			document.getElementById("cont_loptica").style.left=dopuna+240+"px";
+			document.getElementById("kockela").style.left=dopuna+100+"px";
+			document.getElementById("okretalica").style.left=dopuna+487+"px";
+			document.getElementById("okretalica1").style.left=dopuna+487+"px";
+			document.getElementById("okretalica2").style.left=dopuna+487+"px";
+			document.getElementById("okretalica3").style.left=dopuna+487+"px";
+			document.getElementById("okretalica4").style.left=dopuna+487+"px";
+			document.getElementById("putanje").style.left=dopuna+218+"px";
+			
+		}
+
+		function vratipapira(){
+			$("#blokada").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+			$("#blokada2").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+			$("#blokada3").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+			$("#blokada4").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+			document.getElementById("wrapper").style.opacity=0;
+			document.getElementById("papir2a").style.height="48px";
+			document.getElementById("papir2a").style.width="150px";
+			document.getElementById("papir2a").style.webkitTransform="translatez(159px)translatex(300px)translatey(-72px)rotateY(-50deg)";
+				
+			setTimeout(function(){
+				document.getElementById("papir2a").style.webkitTransform="translatey(-72px)translatez(159px)translatex(300px)rotateY(0deg)";
+			},700)
+			
+			setTimeout(function(){document.getElementById("papir2a").style.webkitTransform="translatey(-72px)translatez(-50px)translatex(24px)";},700)
+			
+			
+			setTimeout(function(){document.getElementById("papir2a").style.webkitTransform="translatey(0px)translatez(-50px)translatex(24px)rotateY(0deg)";
+				aotvoren=0;
+			},1550);
+		}
+		function vratipapirb(){
+			$("#blokada").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+			$("#blokada2").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+			$("#blokada3").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+			$("#blokada4").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+				document.getElementById("wrapper2").style.opacity=0;
+			document.getElementById("papir2b").style.height="48px";
+			document.getElementById("papir2b").style.width="150px";
+			document.getElementById("papir2b").style.webkitTransform="translatez(159px)translatex(300px)translatey(-72px)rotateY(-50deg)";
+				
+			setTimeout(function(){
+				document.getElementById("papir2b").style.webkitTransform="translatey(-72px)translatez(159px)translatex(300px)rotateY(0deg)";
+			},700)
+			
+			setTimeout(function(){document.getElementById("papir2b").style.webkitTransform="translatey(-72px)translatez(-50px)translatex(24px)";},700)
+			
+			
+			setTimeout(function(){document.getElementById("papir2b").style.webkitTransform="translatey(0px)translatez(-50px)translatex(24px)rotateY(0deg)";
+				botvoren=0;
+			},1550);
+		}
+		function vratipapirc(){
+			$("#blokada").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+			$("#blokada2").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+			$("#blokada3").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+			$("#blokada4").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+				document.getElementById("wrapper3").style.opacity=0;
+			document.getElementById("papir2c").style.height="48px";
+			document.getElementById("papir2c").style.width="150px";
+			document.getElementById("papir2c").style.webkitTransform="translatez(159px)translatex(300px)translatey(-72px)rotateY(-50deg)";
+				
+			setTimeout(function(){
+				document.getElementById("papir2c").style.webkitTransform="translatey(-72px)translatez(159px)translatex(300px)rotateY(0deg)";
+			},700)
+			
+			setTimeout(function(){document.getElementById("papir2c").style.webkitTransform="translatey(-72px)translatez(-50px)translatex(24px)";},700)
+			
+			
+			setTimeout(function(){document.getElementById("papir2c").style.webkitTransform="translatey(0px)translatez(-50px)translatex(24px)rotateY(0deg)";
+				cotvoren=0;
+			},1550);
+		}
+		function vratipapird(){
+			$("#blokada").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+			$("#blokada2").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+			$("#blokada3").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+			$("#blokada4").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+				document.getElementById("wrapper4").style.opacity=0;
+			document.getElementById("papir2d").style.height="48px";
+			document.getElementById("papir2d").style.width="150px";
+			document.getElementById("papir2d").style.webkitTransform="translatez(159px)translatex(300px)translatey(-72px)rotateY(-50deg)";
+				
+			setTimeout(function(){
+				document.getElementById("papir2d").style.webkitTransform="translatey(-72px)translatez(159px)translatex(300px)rotateY(0deg)";
+			},700)
+			
+			setTimeout(function(){document.getElementById("papir2d").style.webkitTransform="translatey(-72px)translatez(-50px)translatex(24px)";},700)
+			
+			
+			setTimeout(function(){document.getElementById("papir2d").style.webkitTransform="translatey(0px)translatez(-50px)translatex(24px)rotateY(0deg)";
+				dotvoren=0;
+			},1550);
+		}
+
+
+
+		function papir2a (){
+			
+			aotvoren=1;
+			setTimeout(function(){document.getElementById("papir2a").style.webkitTransform="translatey(-72px)translatez(-50px)translatex(24px)";},700);
+			setTimeout(function(){document.getElementById("papir2a").style.webkitTransform="translatez(159px)translatex(300px)translatey(-72px)";},1600);
+			setTimeout(function(){document.getElementById("papir2a").style.webkitTransform="translatez(159px)translatex(300px)translatey(-72px)rotateY(-50deg)";},1700);
+			setTimeout(function(){
+				document.getElementById("papir2a").style.height="405px";
+				document.getElementById("papir2a").style.width="450px";
+				document.getElementById("papir2a").style.webkitTransform="translatez(159px)translatex(300px)translatey(-125px)rotateY(-50deg)";
+				document.getElementById("wrapper").style.opacity=1;
+				setTimeout(function(){
+					$("#blokada").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+					$("#blokada2").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+					$("#blokada3").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+					$("#blokada4").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+
+
+				},200)
+			},2200)
+
+			
+		}
+		function papir2b (){
+			botvoren=1;
+			setTimeout(function(){document.getElementById("papir2b").style.webkitTransform="translatey(-72px)translatez(-50px)translatex(24px)";},700);
+			setTimeout(function(){document.getElementById("papir2b").style.webkitTransform="translatez(159px)translatex(300px)translatey(-72px)";},1600);
+			setTimeout(function(){document.getElementById("papir2b").style.webkitTransform="translatez(159px)translatex(300px)translatey(-72px)rotateY(-50deg)";},1700);
+			setTimeout(function(){
+				document.getElementById("papir2b").style.height="285px";
+				document.getElementById("papir2b").style.width="389px";
+				document.getElementById("papir2b").style.webkitTransform="translatez(159px)translatex(300px)translatey(-121px)rotateY(-50deg)";
+				document.getElementById("wrapper2").style.opacity=1;
+				setTimeout(function(){$("#blokada").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+					$("#blokada2").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+					$("#blokada3").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+					$("#blokada4").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+				},200)
+
+			},2200)
+
+			
+		}
+		function papir2c (){
+			cotvoren=1;
+			setTimeout(function(){document.getElementById("papir2c").style.webkitTransform="translatey(-72px)translatez(-50px)translatex(24px)";},700);
+			setTimeout(function(){document.getElementById("papir2c").style.webkitTransform="translatez(159px)translatex(300px)translatey(-72px)";},1600);
+			setTimeout(function(){document.getElementById("papir2c").style.webkitTransform="translatez(159px)translatex(300px)translatey(-72px)rotateY(-50deg)";},1700);
+			setTimeout(function(){
+				document.getElementById("papir2c").style.height="415px";
+				document.getElementById("papir2c").style.width="450px";
+				document.getElementById("papir2c").style.webkitTransform="translatez(159px)translatex(300px)translatey(-232px)rotateY(-50deg)";
+				document.getElementById("wrapper3").style.opacity=1;
+				setTimeout(function(){$("#blokada").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+					$("#blokada2").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+					$("#blokada3").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+					$("#blokada4").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+				},200)
+
+			},2200)
+
+			
+		}
+		function papir2d (){
+			dotvoren=1;
+			setTimeout(function(){document.getElementById("papir2d").style.webkitTransform="translatey(-72px)translatez(-50px)translatex(24px)";},700);
+			setTimeout(function(){document.getElementById("papir2d").style.webkitTransform="translatez(159px)translatex(300px)translatey(-72px)";},1600);
+			setTimeout(function(){document.getElementById("papir2d").style.webkitTransform="translatez(159px)translatex(300px)translatey(-72px)rotateY(-50deg)";},1700);
+			setTimeout(function(){
+				document.getElementById("papir2d").style.height="285px";
+				document.getElementById("papir2d").style.width="450px";
+				document.getElementById("papir2d").style.webkitTransform="translatez(159px)translatex(300px)translatey(-233px)rotateY(-50deg)";
+				document.getElementById("wrapper4").style.opacity=1;
+				setTimeout(function(){$("#blokada").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+					$("#blokada2").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+					$("#blokada3").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+					$("#blokada4").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+				},200)
+
+			},2200)
+
+			
+		}
+
+		var aotvoren=0;
+		var botvoren=0;
+		var cotvoren=0;
+		var dotvoren=0;
+
+		function bios(){
+			if (aotvoren==1){
+				vratipapira();
+				setTimeout(function(){
+					bio();
+				},1700)
+			} else {
+				if (botvoren==1){
+					vratipapirb();
+					setTimeout(function(){
+						bio();
+					},1700)
+				}else {
+					if (cotvoren==1){
+					vratipapirc();
+					setTimeout(function(){
+						bio();
+					},1700)
+					} else {
+						if (dotvoren==1){
+							vratipapird();
+							setTimeout(function(){
+								bio();
+							},1700)
+						} else {
+							bio();
+						}
+					}
+				}
+			}
+		}
+		function ilikes(){
+			if (aotvoren==1){
+				vratipapira();
+				setTimeout(function(){
+					ilike();
+				},1700)
+			} else {
+				if (botvoren==1){
+					vratipapirb();
+					setTimeout(function(){
+						ilike();
+					},1700)
+				}else {
+					if (cotvoren==1){
+					vratipapirc();
+					setTimeout(function(){
+						ilike();
+					},1700)
+					} else {
+						if (dotvoren==1){
+							vratipapird();
+							setTimeout(function(){
+								ilike();
+							},1700)
+						} else {
+							ilike();
+						}
+					}
+				}
+			}
+		}
+		function educations(){
+			if (aotvoren==1){
+				vratipapira();
+				setTimeout(function(){
+					education();
+				},1700)
+			} else {
+				if (botvoren==1){
+					vratipapirb();
+					setTimeout(function(){
+						education();
+					},1700)
+				}else {
+					if (cotvoren==1){
+					vratipapirc();
+					setTimeout(function(){
+						education();
+					},1700)
+					} else {
+						if (dotvoren==1){
+							vratipapird();
+							setTimeout(function(){
+								education();
+							},1700)
+						} else {
+							education();
+						}
+					}
+				}
+			}
+		}
+		function contacts(){
+			if (aotvoren==1){
+				vratipapira();
+				setTimeout(function(){
+					contact();
+				},1700)
+			} else {
+				if (botvoren==1){
+					vratipapirb();
+					setTimeout(function(){
+						contact();
+					},1700)
+				}else {
+					if (cotvoren==1){
+					vratipapirc();
+					setTimeout(function(){
+						contact();
+					},1700)
+					} else {
+						if (dotvoren==1){
+							vratipapird();
+							setTimeout(function(){
+								contact();
+							},1700)
+						} else {
+							contact();
+						}
+					}
+				}
+			}
+		}
+		var biopen=0;
+		var edopen=0;
+		var ilopen=0;
+		var coopen=0;
+
+		var ab_circ=0;
+		var sk_circ=0;
+		var po_circ=0;
+
+
+		function bio(){
+			if (biopen==0){
+				$("#blokada").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+				$("#blokada2").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+				$("#blokada3").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+				$("#blokada4").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+				document.getElementById("fiokica1").style.webkitTransform="translatez(208px) translatey(58px)";
+				document.getElementById("fiokica2").style.webkitTransform="translatez(108px) translatey(67px)";
+				document.getElementById("fiokica3").style.webkitTransform="translatez(108px) translatey(75px)";
+				document.getElementById("fiokica4").style.webkitTransform="translatez(108px) translatey(83px)";
+				papir2a();
+				biopen=1;
+				edopen=0;
+				ilopen=0;
+				coopen=0;
+			} else {
+				document.getElementById("fiokica1").style.webkitTransform="translatez(108px) translatey(58px)";
+				document.getElementById("fiokica2").style.webkitTransform="translatez(108px) translatey(67px)";
+				document.getElementById("fiokica3").style.webkitTransform="translatez(108px) translatey(75px)";
+				document.getElementById("fiokica4").style.webkitTransform="translatez(108px) translatey(83px)";
+				biopen=0;
+				edopen=0;
+				ilopen=0;
+				coopen=0;
+				setTimeout(function(){
+					$("#blokada").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+					$("#blokada2").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+					$("#blokada3").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+					$("#blokada4").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+			},300)
+			}
+		}
+		function ilike(){
+			if (ilopen==0){	
+				$("#blokada").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+				$("#blokada2").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+				$("#blokada3").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+				$("#blokada4").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+				document.getElementById("fiokica1").style.webkitTransform="translatez(108px) translatey(58px)";
+				document.getElementById("fiokica2").style.webkitTransform="translatez(208px) translatey(67px)";
+				document.getElementById("fiokica3").style.webkitTransform="translatez(108px) translatey(75px)";
+				document.getElementById("fiokica4").style.webkitTransform="translatez(108px) translatey(83px)";
+				biopen=0;
+				edopen=0;
+				ilopen=1;
+				coopen=0;
+					papir2b();
+				}else {
+					document.getElementById("fiokica1").style.webkitTransform="translatez(108px) translatey(58px)";
+					document.getElementById("fiokica2").style.webkitTransform="translatez(108px) translatey(67px)";
+					document.getElementById("fiokica3").style.webkitTransform="translatez(108px) translatey(75px)";
+					document.getElementById("fiokica4").style.webkitTransform="translatez(108px) translatey(83px)";
+					biopen=0;
+					edopen=0;
+					ilopen=0;
+					coopen=0;
+					setTimeout(function(){
+					$("#blokada").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+					$("#blokada2").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+					$("#blokada3").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+					$("#blokada4").css({"webkitTransform":"translatez(0px)translatey(-6px)"});},300)
+				}
+			
+		}
+		function education(){
+			if (edopen==0){	
+				$("#blokada").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+				$("#blokada2").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+				$("#blokada3").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+				$("#blokada4").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+				document.getElementById("fiokica1").style.webkitTransform="translatez(108px) translatey(58px)";
+				document.getElementById("fiokica2").style.webkitTransform="translatez(108px) translatey(67px)";
+				document.getElementById("fiokica3").style.webkitTransform="translatez(208px) translatey(75px)";
+				document.getElementById("fiokica4").style.webkitTransform="translatez(108px) translatey(83px)";
+					biopen=0;
+					edopen=1;
+					ilopen=0;
+					coopen=0;
+					papir2c();
+			}else {
+					document.getElementById("fiokica1").style.webkitTransform="translatez(108px) translatey(58px)";
+					document.getElementById("fiokica2").style.webkitTransform="translatez(108px) translatey(67px)";
+					document.getElementById("fiokica3").style.webkitTransform="translatez(108px) translatey(75px)";
+					document.getElementById("fiokica4").style.webkitTransform="translatez(108px) translatey(83px)";
+					biopen=0;
+					edopen=0;
+					ilopen=0;
+					coopen=0;
+					setTimeout(function(){
+					$("#blokada").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+					$("#blokada2").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+					$("#blokada3").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+					$("#blokada4").css({"webkitTransform":"translatez(0px)translatey(-6px)"});},300)
+				}
+
+		}
+
+		function contact(){
+			if (coopen==0){	
+				$("#blokada").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+				$("#blokada2").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+				$("#blokada3").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+				$("#blokada4").css({"webkitTransform":"translatez(1px)translatey(-6px)"});
+				document.getElementById("fiokica1").style.webkitTransform="translatez(108px) translatey(58px)";
+				document.getElementById("fiokica2").style.webkitTransform="translatez(108px) translatey(67px)";
+				document.getElementById("fiokica3").style.webkitTransform="translatez(108px) translatey(75px)";
+				document.getElementById("fiokica4").style.webkitTransform="translatez(208px) translatey(83px)";
+					biopen=0;
+					edopen=0;
+					ilopen=0;
+					coopen=1;
+					papir2d();
+			}else {
+					document.getElementById("fiokica1").style.webkitTransform="translatez(108px) translatey(58px)";
+					document.getElementById("fiokica2").style.webkitTransform="translatez(108px) translatey(67px)";
+					document.getElementById("fiokica3").style.webkitTransform="translatez(108px) translatey(75px)";
+					document.getElementById("fiokica4").style.webkitTransform="translatez(108px) translatey(83px)";
+					biopen=0;
+					edopen=0;
+					ilopen=0;
+					coopen=0;
+					setTimeout(function(){
+					$("#blokada").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+					$("#blokada2").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+					$("#blokada3").css({"webkitTransform":"translatez(0px)translatey(-6px)"});
+					$("#blokada4").css({"webkitTransform":"translatez(0px)translatey(-6px)"});},300)
+				}
+			
+		}
+		$(window).on("resize", uzicija);
+
+		
+
+	</script>
+</head>
+<body onload="uzicija()">
+		
+	<div id="container1">
+		<div id="maska"></div>
+		<div id="maska2"></div>
+		
+		<div id="small_circle"></div>
+		
+		<div id="achivement" class="achivement">
+			<p id="ach">Achivement Unlocked</p>
+			<p id="ach_type">Tried the <span id="cir" style="color:rgb(255, 187, 63)">circle</span></p>			
+		</div>
+		<div id="achivement2"class="achivement">
+			<p id="ach">Achivement Unlocked</p>
+			<p id="ach_type"><span id="cir" style="color:rgb(114, 77, 106)">Explorer</span></p>					
+		</div>
+		<div id="achivement3"class="achivement">
+			<p id="ach">Achivement Unlocked</p>
+			<p id="ach_type">Interesed in <span id="cir" style="color:#ffbb3f">skills</span></p>					
+		</div>
+		<div id="achivement4"class="achivement">
+			<p id="ach">Achivement Unlocked</p>
+			<p id="ach_type">Check the <span id="cir" style="color:gray">portfolio</span></p>					
+		</div>
+		
+	
+
+		<div id="gorela1">
+				<div id="izazov">Vasilije Milenkovic</div>
+				<div id="zekanje" style="color:#ffbb3f">My skills</div>
+
+		</div>
+		<div id="container4">
+			<div id="gorela">
+				<div id="izazov">Vasilije Milenkovic</div>
+				<div id="zekanje">About me</div>
+
+			</div>
+			<div id="prostorela">
+				<div id="kockela">
+					<div id="stranela1" class="stranila">
+						<div id="grmila">
+							<div id="gornj">Information drawer</div>
+							<div id="donj">Please keep the drawers closed</div>
+						</div>
+						
+
+
+					</div>
+					<div id="stranela2" class="stranila"></div>
+					<div id="stranela3" class="stranila"></div>
+					<div id="stranela4" class="stranila"></div>
+					<div id="stranela5" class="stranila"></div>
+					<div id="stranela6" class="stranila"></div>
+					<div id="fiokica1">
+						<div id="blokada">blokada</div>
+						<div id="pred_strana" onclick="bios()">
+							<div id="bioz" class="slova">bio</div>
+							
+						</div>
+						<div id="pred_strana2"></div>
+						<div id="zad_strana"></div>
+						<div id="zad_strana2"></div>
+						<div id="lev_strana"></div>
+						<div id="lev_strana2"></div>
+						<div id="desn_strana"></div>
+						<div id="desn_strana2"></div>
+						<div id="dno"></div>
+						<div id="papir1"class="papir" ></div>
+						<div id="papir2a" class="papir">
+							<div id="wrapper">
+								<p class="ime"><span id="sl">V</span>asilije Milenkovic</p>
+								<p class="bio">Bio</p>
+								<p class="linija"></p>
+								<div class="slikar">
+									<div class="okvir">
+										<img width="150px"src="profilslika.jpg" alt="Vasilije" />
+									</div>
+								</div>	
+								<div class="infor">
+									<ul class="uinf_lev">
+										<li class="inf_lev">Born:</li>
+										<li class="inf_lev">Street:</li>
+										<li class="inf_lev">City:</li>
+										<li class="inf_lev">State:</li>
+										<li class="inf_lev">E-mail:</li>
+									</ul>
+									<ul class="uinf_des">
+										<li class="inf_des">05.03.1991</li>
+										<li class="inf_des">Serifova 4</li>
+										<li class="inf_des">Smederevska Palanka</li>
+										<li class="inf_des">Serbia</li>
+										<li class="inf_des">vasilie.91@gmail.com</li>
+									</ul>
+								</div>
+								<p class="linija"></p>
+								<p class="ab_banner">About me</p>
+
+								<p class="aboutme">Hello! My name is Vasilije, and I'm a junior web developer. Being a self-educated programer I find learning new stuff very easy. This is my portfolio. Have fun.   </p>
+								<p class="linija"></p>
+							</div>
+
+						</div>
+						<div id="papir3" class="papir"></div>
+						<div id="papir4" class="papir"></div>
+						<div id="papir5" class="papir"></div>
+						<div id="papir6" class="papir"></div>
+						<div id="debljina_gore"></div>
+						<div id="debljina_levo"></div>
+
+					</div>
+					<div id="fiokica2">
+						<div id="blokada2">blokada</div>
+						<div id="pred_strana"onclick="ilikes()">
+							<div id="ilike" class="slova">i like</div>
+						</div>
+						<div id="pred_strana2"></div>
+						<div id="zad_strana"></div>
+						<div id="zad_strana2"></div>
+						<div id="lev_strana"></div>
+						<div id="lev_strana2"></div>
+						<div id="desn_strana"></div>
+						<div id="desn_strana2"></div>
+						<div id="dno"></div>
+						<div id="papir1"class="papir" ></div>
+						<div id="papir2b" class="papir">
+							<div id="wrapper2">
+								<p class="ime"><span id="sl">V</span>asilije Milenkovic</p>
+								<p class="bio">I Like</p>
+								<p class="linija1"></p>
+								<div class="slikar">
+									<div class="okvir">
+										<img width="150px"src="heart.png" alt="Vasilije" />
+									</div>
+								</div>
+								<div class="infor">
+									<ul class="uinf_lev">
+										<li class="inf_lev"></li>
+										<li class="inf_lev"></li>
+										<li class="inf_lev">I Like</li>
+										<li class="inf_lev"></li>
+										<li class="inf_lev"></li>
+									</ul>
+									<ul class="uinf_des">
+										<li class="inf_des">Music </li>
+										<li class="inf_des">Design</li>
+										<li class="inf_des">Chocolate</li>
+										<li class="inf_des">Cats</li>
+										<li class="inf_des">Programing</li>
+									</ul>
+								</div>
+								<p class="linija1"></p>
+								
+							</div>
+						</div>
+						<div id="papir3" class="papir"></div>
+						<div id="papir4" class="papir"></div>
+						<div id="papir5" class="papir"></div>
+						<div id="papir6" class="papir"></div>
+						<div id="debljina_gore"></div>
+						<div id="debljina_levo"></div>
+
+					</div>
+					<div id="fiokica3">
+						<div id="blokada3">blokada</div>
+						<div id="pred_strana"onclick="educations()">
+							<div id="education" class="slova">education</div>
+						</div>
+						<div id="pred_strana2"></div>
+						<div id="zad_strana"></div>
+						<div id="zad_strana2"></div>
+						<div id="lev_strana"></div>
+						<div id="lev_strana2"></div>
+						<div id="desn_strana"></div>
+						<div id="desn_strana2"></div>
+						<div id="dno"></div>
+						<div id="papir1"class="papir" ></div>
+						<div id="papir2c" class="papir">
+							<div id="wrapper3">
+								<p class="ime"><span id="sl">V</span>asilije Milenkovic</p>
+								<p class="bio">Education</p>
+								<p class="linija"></p>
+								<ul id="upinf_lev">
+									<li class="inf_lev">High school:</li>
+									<li class="inf_lev">Faculty:</li>
+									<li class="inf_lev">Programing:</li>
+									<li class="inf_lev">Design and Art:</li>
+									
+								</ul>
+								<ul id="upinf_des">
+									<li class="inf_des">Palanacka Gimnazija</li>
+									<li class="inf_des">Civil Engineering (1 year, left)</li>
+									<li class="inf_des">Self-taught</li>
+									<li class="inf_des">Architecture course</li>
+									
+								</ul>
+								
+								<p class="linija"></p>
+								<p class="ab_banner">About me</p>
+
+								<p class="aboutme">My first encounter with programing was back in High School, basic Delphi and Pascal. Later on colege I learned Visual Basic. After realising how easy it is I dropped out of college and started learning Html. And when I felt the freedom of making anything that I can imagine I fell in love with Javascript.     </p>
+								<p class="linija"></p>	
+							</div>
+						</div>
+						<div id="papir3" class="papir"></div>
+						<div id="papir4" class="papir"></div>
+						<div id="papir5" class="papir"></div>
+						<div id="papir6" class="papir"></div>
+						<div id="debljina_gore"></div>
+						<div id="debljina_levo"></div>
+
+					</div>
+					<div id="fiokica4">
+						<div id="blokada4">blokada</div>
+						<div id="pred_strana"onclick="contacts()">
+							<div id="contact" class="slova">contact me</div>
+						</div>
+						<div id="pred_strana2"></div>
+						<div id="zad_strana"></div>
+						<div id="zad_strana2"></div>
+						<div id="lev_strana"></div>
+						<div id="lev_strana2"></div>
+						<div id="desn_strana"></div>
+						<div id="desn_strana2"></div>
+						<div id="dno"></div>
+						<div id="papir1"class="papir" ></div>
+						<div id="papir2d" class="papir">
+							<div id="wrapper4">
+								<p class="ime"><span id="sl">V</span>asilije Milenkovic</p>
+								<p class="bio">Contact me</p>
+								<p class="linija"></p>
+								<div class="slikar">
+									<div class="okvir">
+										<img width="200px"src="cover.jpg" alt="Vasilije" />
+									</div>
+								</div>
+								<div class="infor">
+									<ul id="pinf_lev">
+										<li class="inf_lev">Telephone:</li>
+										<li class="inf_lev">E-mail:</li>
+										<li class="inf_lev">Skype:</li>
+										<li class="inf_lev">Smoke:</li>
+										<li class="inf_lev">Morseus:</li>
+									</ul>
+									<ul id="pinf_des">
+										<li class="inf_des">+381643853548</li>
+										<li class="inf_des">vasilie.91@gmail.com</li>
+										<li class="inf_des">vasilije.</li>
+										<li class="inf_des">Not Available</li>
+										<li class="inf_des">Not Available</li>
+									</ul>
+								</div>
+								<p class="linija"></p>
+								
+							</div>
+						</div>
+						<div id="papir3" class="papir"></div>
+						<div id="papir4" class="papir"></div>
+						<div id="papir5" class="papir"></div>
+						<div id="papir6" class="papir"></div>
+						<div id="debljina_gore"></div>
+						<div id="debljina_levo"></div>
+
+					</div>
+
+
+				</div>
+				<div id="panela"></div>
+				
+
+			</div>
+			<div id="povratak">
+				<div id="jedan" class="pov"></div>
+				<div id="dva" class="pov"></div>
+				<div id="tri" class="pov"></div>
+			</div>
+		
+
+
+
+
+
+
+
+
+
+		</div>
+		<p id='naslov'style="font-size:40px; padding-top:250px; color:#ffbb3f; padding-bottom:0px;">VASILIJE MILENKOVIC</p>
+		<p id="text"style="font-size:20px; color:whitesmoke; margin-top:20px; font-family:Mohave;">CURRICULUM VITAE</p>
+			<div id="drzac">	
+				<div id="tocak" onClick="belo()"></div>
+				<div id="static">Loading..</div>
+				<div id="arrow"><img src="arrow-bottom2.gif" alt="strelica" ></div>
+				<div id="senkal" class="senkal"></div>
+				<div id="senkad" class="senkad"></div>
+				<div id="spec_okret">
+					<div id="spec_lopt"></div>
+				</div>
+
+			</div>
+			<div id="naslovi">
+					<div id="about">About ME</div>
+					<div id="skills">My Skills</div>
+					<div id="portfolio">portfolio</div>
+			</div>			
+			<div id="cont_loptica">
+				<div id="lopta1" class="loptica"></div>
+				<div id="lopta2" class="loptica"></div>
+				<div id="lopta3" class="loptica"></div>
+				<div id="lopta4" class="loptica"></div>
+				<div id="lopta5" class="loptica"></div>
+				<div id="lopta6" class="loptica"></div>
+				<div id="lopta7" class="loptica"></div>
+				<div id="lopta8" class="loptica"></div>
+				<div id="lopta9" class="loptica"></div>
+				<div id="lopta10" class="loptica"></div>
+				<div id="lopta11" class="loptica"></div>
+				<div id="lopta12" class="loptica"></div>
+				<div id="lopta13" class="loptica"></div>
+				<div id="lopta14" class="loptica"></div>
+				<div id="lopta15" class="loptica"></div>
+				<div id="lopta16" class="loptica"></div>
+				<div id="lopta17" class="loptica"></div>
+				<div id="lopta18" class="loptica"></div>
+				<div id="lopta19" class="loptica"></div>
+				<div id="lopta20" class="loptica"></div>
+				<div id="lopta21" class="loptica"></div>
+				<div id="lopta22" class="loptica"></div>
+				<div id="lopta23" class="loptica"></div>
+				<div id="lopta24" class="loptica"></div>
+				<div id="lopta25" class="loptica"></div>
+				<div id="lopta26" class="loptica"></div>
+				<div id="lopta27" class="loptica"></div>
+				<div id="lopta28" class="loptica"></div>
+				<div id="lopta29" class="loptica"></div>
+				<div id="lopta30" class="loptica"></div>
+				<div id="lopta31" class="loptica"></div>
+				<div id="lopta32" class="loptica"></div>
+				<div id="lopta33" class="loptica"></div>
+				<div id="lopta34" class="loptica"></div>
+				<div id="lopta35" class="loptica"></div>
+				<div id="lopta36" class="loptica"></div>
+				<div id="lopta37" class="loptica"></div>
+				<div id="lopta38" class="loptica"></div>
+				
+			</div>
+			<div id="pozadina">
+				<div id="senkal_poz" class="senkal"></div>
+				<div id="senkad_poz" class="senkad"></div>
+				<div id="tocak_poz" class="tocak"></div>
+			</div>
+	</div>
+	
+
+	<div id="container3">
+		<div id="legenda">
+			<h1 id="fronte">Frontend</h1>
+			<p id="ht">HTML</p>
+			<p id="cs">CSS</p>
+			<p id="js">Javascript</p>
+			<p id="jq">Jquery</p>
+			<h1 id="backe">Backend</h1>
+			<p id="ph">Php</p>
+			<p id="my">mysql</p>
+		</div>
+		<div id='krug1'>
+		</div>
+		<div id="okretalica">
+
+			<div id="put_jq"><p id="info_put_jq" class="put_info"> JQUERY</p></div>
+			<div id="javascript">
+				<div id="jquery"></div>
+			</div>
+			<div id="front1">
+				<div id="angular"></div>
+			</div>
+		</div>
+		<div id="okretalica1">
+			<div id="css">
+				<div id="bootstrap">
+				</div>
+			</div>
+			
+		</div>
+		<div id="okretalica2">
+			<div id="php"></div>
+		</div>	
+		<div id="okretalica3">
+			<div id="mysql"></div>
+		</div>
+		<div id="okretalica4">
+			<div id="html"></div>
+		</div>
+		<div id="putanje">
+			<div id="put_html"><p id="info_put_html" class="put_info"> HTML</p></div>		
+			<div id="put_css"><p id="info_put_css" class="put_info"> CSS</p></div>
+			<div id="put_java"><p id="info_put_java" class="put_info"> JAVASCRIPT</p></div>
+			<div id="put_php"><p id="info_put_php" class="put_info"> PHP</p></div>
+			<div id="put_mysql"><p id="info_put_mysql" class="put_info">MYSQL</p></div>
+
+		</div>
+		<div id="povratak1">
+				<div id="jedan1" class="pov"></div>
+				<div id="dva1" class="pov"></div>
+				<div id="tri1" class="pov"></div>
+		</div>
+	</div>
+	<div id="container5">
+		
+		<div id="nema_pravila" >
+			<div id="prvak" class="elementi_porta"></div>
+			<div id="drugak" class="elementi_porta">  </div>
+			<div id="trecak" class="elementi_porta">  </div>
+			<div id="cetvrtak" class="elementi_porta">  </div>
+			<div id="petak" class="elementi_porta">  </div>
+			<div id="sestak" class="elementi_porta">  </div>
+		</div>
+		<div id="opis">
+			<h2 id="opis_naslov">Zoharica </h2>
+			<p id="opis_tekst" class="opis_tekst">This is the first website that I created. Yet unfinished it has some basic functions. The page \"Glasanje\" has voting and results, done through Php and Mysql. When the vote is triggered it grabs the voters ip adress and checks if the adress exist in the .txt file. If true the vote is blocked. If false it increases the variable for selected person by one, and puts voters adress in the .txt. The .txt file is erased on the end of the day. It's not very reliable code, and should be done through login system because of dynamic IP.On the first page you can put an username, then the cookie is created with 1 hour expiration. That username is used in the last voted section after voting. It also grabs the time of voting. Everything is sent to Mysql database and on the pageload it loads the information and stores it into variables. This website is created for fun and experimenting and don't take it serious. As I said it's unfinished, because I started interesting more in frontend and started other projects. 
+				    </p>
+			
+			<a id="link "href="http://www.zoharica.heliohost.org" target="_blank">Preview</a>
+		</div>
+		<div id="povratak2">
+				<div id="jedan2" class="pov"></div>
+				<div id="dva2" class="pov"></div>
+				<div id="tri2" class="pov"></div>
+		</div>
+		<div id="gorela2">
+				<div id="izazov">Vasilije Milenkovic</div>
+				<div id="zekanje" style="color:gray">Portfolio</div>
+
+		</div>
+		
+	</div>
+	
+	<script>
+			var faza=1;
+			var faz=0;
+			var zonfa=0;
+			function belo(){
+				if(faza==1) {
+					if ($("#text").css("opacity")>0.7){
+						console.log($("#text").css("opacity"))
+						$('#tocak').css({"-webkit-animation": "odleti 2s ease-in forwards"});
+						$('#senkal').css({"-webkit-animation": "okretlevo 0.8s ease-out forwards"});
+						setTimeout(function (){
+							$("#about").animate({opacity:"1"},1000);
+									},600);
+						setTimeout(function (){
+							$("#portfolio").animate({opacity:"1"},1000);
+									},1200);
+						setTimeout(function (){
+							$("#skills").animate({opacity:"1"},1000);
+									},1800);
+
+						$("#arrow").animate({opacity:"0"},200);	
+						$("#tocak").css({"background":"none"},200);
+						$('#senkad').css({"-webkit-animation": "okretdesno    1.4s ease-out forwards"});
+						
+						var n='#lopta';
+						var i=1;
+						setTimeout(function(){
+							var ponavlja=setInterval(function(){
+								if (i>40) {clearInterval(ponavlja)} else {
+									m=n+i;
+									$(m).animate({opacity:"1"},300);
+									i++;
+								}	
+							},30);
+							zonfa=1;
+
+						},1400);
+						
+						setTimeout(function(){
+							$('#achivement').css({"-webkit-animation": "achive    3.8s ease-in forwards"});
+							$('#small_circle').css({"-webkit-animation": "achive_circle   3.8s ease-in forwards"});
+							setTimeout(function(){$('#small_circle').css({"-webkit-animation": "none"});},3800)
+							
+							faza=2;
+						},2400)
+						
+						
+						$("#cont_loptica").animate({opacity:"1"},100);
+					}
+				} else {
+					//ovde ide kod za drugi klik tocka
+				}
+			}
+			function krugovi(){
+				//$("#tok").
+			}
+
+			function hover_tocak(){
+			
+				if (faza==1){
+					$("#arrow").animate({opacity:"1"},500);
+					$("#tocak").css({"background":"#ffbb3f"});
+				}else {
+					if (zonfa==1) {
+						$("#tocak").css({"background":"#ffbb3f"});
+						
+						$("#lopta1").animate({top:"45",left:"276"},500);
+						$("#lopta2").animate({top:"69",left:"260"},500);
+						$("#lopta3").animate({top:"21",left:"244"},500);
+						$("#lopta4").animate({top:"39",left:"280"},500);
+						$("#lopta5").animate({top:"34",left:"288"},500);
+						$("#lopta6").animate({top:"26",left:"280"},500);
+						$("#lopta7").animate({top:"31",left:"288"},500);
+						$("#lopta8").animate({top:"39",left:"283"},500);
+						$("#lopta9").animate({top:"14",left:"227"},500);
+						$("#lopta10").animate({top:"23",left:"272"},500);
+
+						$("#lopta11").animate({top:"10",left:"244"},500);
+						$("#lopta12").animate({top:"3",left:"244"},500);
+						$("#lopta13").animate({top:"8",left:"244"},500);
+						$("#lopta14").animate({top:"-3",left:"232"},500);
+						$("#lopta15").animate({top:"-9",left:"224"},500);
+						$("#lopta16").animate({top:"99",left:"214"},500);
+						$("#lopta17").animate({top:"-11",left:"205"},500);
+						$("#lopta18").animate({top:"-15",left:"207"},500);
+						$("#lopta19").animate({top:"-19",left:"209"},500);
+						$("#lopta20").animate({top:"-13",left:"209"},500);
+
+						$("#lopta21").animate({top:"21",left:"194"},500);
+						$("#lopta22").animate({top:"30",left:"190"},500);
+						$("#lopta23").animate({top:"37",left:"180"},500);
+						$("#lopta24").animate({top:"37",left:"167"},500);
+						$("#lopta25").animate({top:"45",left:"168"},500);
+						$("#lopta26").animate({top:"53",left:"164"},500);
+						$("#lopta27").animate({top:"61",left:"160"},500);
+						$("#lopta28").animate({top:"42",left:"176"},500);
+						$("#lopta29").animate({top:"77",left:"152"},500);
+						$("#lopta30").animate({top:"85",left:"148"},500);
+
+
+						$("#lopta31").animate({top:"92",left:"141"},500);
+						$("#lopta32").animate({top:"100",left:"134"},500);
+						$("#lopta33").animate({top:"14",left:"140"},500);
+						$("#lopta34").animate({top:"92",left:"137"},500);
+						$("#lopta35").animate({top:"-5",left:"138"},500);
+						$("#lopta36").animate({top:"106",left:"139"},500);
+						$("#lopta37").animate({top:"30",left:"108"},500);
+						$("#lopta38").animate({top:"108",left:"107"},500);
+					}
+				}
+			}
+			$("#tocak").mouseenter(function(){
+				hover_tocak();
+			});
+			$("#skills").mouseenter(function(){
+				hover_tocak();
+			});
+
+			$("#tocak").mouseout(function(){
+				$("#arrow").animate({opacity:"0"},500);
+				$("#tocak").css({"background":"none"});
+			});
+			function hover_about(){
+				if (zonfa==1) {
+					$("#cont_loptica").animate({ top:"320px"},300);
+					$("#senkal").css({"background":"rgb(114, 77, 106)"});
+					$("#senkal_poz").css({"opacity":"1"});
+					$("#lopta1").animate({top:"12",left:"235"},500);
+					$("#lopta2").animate({top:"12",left:"247"},500);
+					$("#lopta3").animate({top:"12",left:"235"},500);
+					$("#lopta4").animate({top:"12",left:"214"},500);
+					$("#lopta5").animate({top:"14",left:"202"},500);
+					$("#lopta6").animate({top:"21",left:"191"},500);
+					$("#lopta7").animate({top:"39",left:"185"},500);
+					$("#lopta8").animate({top:"12",left:"232"},500);
+					$("#lopta9").animate({top:"30",left:"177"},500);
+					$("#lopta10").animate({top:"59",left:"176"},500);
+
+					$("#lopta11").animate({top:"65",left:"180"},500);
+					$("#lopta12").animate({top:"50",left:"166"},500);
+					$("#lopta13").animate({top:"66",left:"182"},500);
+					$("#lopta14").animate({top:"67",left:"187"},500);
+					$("#lopta15").animate({top:"75",left:"184"},500);
+					$("#lopta16").animate({top:"83",left:"181"},500);
+					$("#lopta17").animate({top:"77",left:"183"},500);
+					$("#lopta18").animate({top:"71",left:"184"},500);
+					$("#lopta19").animate({top:"66",left:"186"},500);
+					$("#lopta20").animate({top:"65",left:"190"},500);
+
+					$("#lopta21").animate({top:"12",left:"198"},500);
+					$("#lopta22").animate({top:"12",left:"203"},500);
+					$("#lopta23").animate({top:"65",left:"187"},500);
+					$("#lopta24").animate({top:"12",left:"205"},500);
+					$("#lopta25").animate({top:"65",left:"188"},500);
+					$("#lopta26").animate({top:"65",left:"193"},500);
+					$("#lopta27").animate({top:"65",left:"199"},500);
+					$("#lopta28").animate({top:"12",left:"199"},500);
+					$("#lopta29").animate({top:"65",left:"201"},500);
+					$("#lopta30").animate({top:"12",left:"200"},500);
+
+
+					$("#lopta31").animate({top:"14",left:"204"},500);
+					$("#lopta32").animate({top:"20",left:"206"},500);
+					$("#lopta33").animate({top:"28",left:"204"},500);
+					$("#lopta34").animate({top:"37",left:"201"},500);
+					$("#lopta35").animate({top:"62",left:"188"},500);
+					$("#lopta36").animate({top:"55",left:"191"},500);
+					$("#lopta37").animate({top:"47",left:"189"},500);
+					$("#lopta38").animate({top:"12",left:"121"},500);
+				}
+			}
+			$("#senkal").mouseenter(function(){
+				hover_about();
+			});
+			$("#about").mouseenter(function(){
+				hover_about();
+			});
+			$("#about").mouseout(function(){
+				if (faz==0){
+					$("#senkal").css({"background":"none"});
+					$("#senkal_poz").css({"opacity":"0"});
+				};
+			});
+			$("#senkal").mouseout(function(){
+				if (faz==0){
+					$("#senkal").css({"background":"none"});
+					$("#senkal_poz").css({"opacity":"0"});
+				};
+			});
+			
+			$("#skills").mouseout(function(){
+				$("#tocak").css({"background":"none"})
+			});
+			function hover_portfolio(){
+
+				if (zonfa==1) {
+					$("#senkad").css({"background":"rgb(116, 111, 117)"});
+					
+					$("#senkad").css({"background":"rgb(116, 111, 117)"})
+					
+					$("#lopta1").animate({top:"6",left:"227"},500);
+					$("#lopta2").animate({top:"6",left:"311"},500);
+					$("#lopta3").animate({top:"66",left:"219"},500);
+					$("#lopta4").animate({top:"66",left:"303"},500);
+					$("#lopta5").animate({top:"66",left:"291"},500);
+					$("#lopta6").animate({top:"66",left:"278"},500);
+					$("#lopta7").animate({top:"66",left:"264"},500);
+					$("#lopta8").animate({top:"66",left:"249"},500);
+					$("#lopta9").animate({top:"56",left:"283"},500);
+					$("#lopta10").animate({top:"66",left:"231"},500);
+
+					$("#lopta11").animate({top:"66",left:"217"},500);
+					$("#lopta12").animate({top:"66",left:"203"},500);
+					$("#lopta13").animate({top:"66",left:"188"},500);
+					$("#lopta14").animate({top:"47",left:"263"},500);
+					$("#lopta15").animate({top:"38",left:"259"},500);
+					$("#lopta16").animate({top:"36",left:"213"},500);
+					$("#lopta17").animate({top:"37",left:"209"},500);
+					$("#lopta18").animate({top:"26",left:"221"},500);
+					$("#lopta19").animate({top:"26",left:"225"},500);
+					$("#lopta20").animate({top:"30",left:"239"},500);
+
+					$("#lopta21").animate({top:"6",left:"227"},500);
+					$("#lopta22").animate({top:"6",left:"215"},500);
+					$("#lopta23").animate({top:"21",left:"227"},500);
+					$("#lopta24").animate({top:"13",left:"223"},500);
+					$("#lopta25").animate({top:"56",left:"131"},500);
+					$("#lopta26").animate({top:"47",left:"127"},500);
+					$("#lopta27").animate({top:"37",left:"123"},500);
+					$("#lopta28").animate({top:"27",left:"119"},500);
+					$("#lopta29").animate({top:"17",left:"115"},500);
+					$("#lopta30").animate({top:"54",left:"157"},500);
+
+
+					$("#lopta31").animate({top:"6",left:"170"},500);
+					$("#lopta32").animate({top:"6",left:"155"},500);
+					$("#lopta33").animate({top:"6",left:"141"},500);
+					$("#lopta34").animate({top:"6",left:"126"},500);
+					$("#lopta35").animate({top:"6",left:"110"},500);
+					$("#lopta36").animate({top:"6",left:"96"},500);
+					$("#lopta37").animate({top:"26",left:"129"},500);
+					$("#lopta38").animate({top:"17",left:"125"},500);
+				}
+			}
+			$("#senkad").mouseenter(function(){
+				hover_portfolio();
+			});
+			$("#portfolio").mouseenter(function(){
+				hover_portfolio();
+			});
+			$("#portfolio").mouseout(function(){
+				$("#senkad").css({"background":"none"})
+			});
+
+			$("#senkad").mouseout(function(){
+				$("#senkad").css({"background":"none"})
+			});
+		var senkad=$('#senkad');	
+
+		var faz=0;
+		//============= Ovo je kod za klik na prvi od 3 tocka===================
+		function klik_about(){
+			faz=1;
+			$("#senkal_poz").animate({left:"433", top:"-246", borderRadius:"15", opacity:"0.2", width:"111px", height:"40px"}, 200);
+			var n='#lopta';
+			var i=1;
+			
+			setTimeout(function(){
+				setTimeout(function(){$("#lopta4").css({"background":"rgb(114, 77, 106)"},200)},30);
+				setTimeout(function(){$("#lopta1").css({"background":"rgb(114, 77, 106)"},200)},60);
+				setTimeout(function(){$("#lopta3").css({"background":"rgb(114, 77, 106)"},200)},90);
+				setTimeout(function(){$("#lopta2").css({"background":"rgb(114, 77, 106)"},200)},120);
+				setTimeout(function(){$("#lopta8").css({"background":"rgb(114, 77, 106)"},200)},150);			
+				setTimeout(function(){$("#lopta38").css({"background":"rgb(114, 77, 106)"},200)},180);
+				setTimeout(function(){$("#lopta21").css({"background":"rgb(114, 77, 106)"},200)},210);
+				setTimeout(function(){$("#lopta22").css({"background":"rgb(114, 77, 106)"},200)},240);
+				setTimeout(function(){$("#lopta24").css({"background":"rgb(114, 77, 106)"},200)},270);
+				setTimeout(function(){$("#lopta28").css({"background":"rgb(114, 77, 106)"},200)},300);
+				setTimeout(function(){$("#lopta30").css({"background":"rgb(114, 77, 106)"},200)},330);			
+				setTimeout(function(){$("#lopta31").css({"background":"rgb(114, 77, 106)"},200)},360);
+				setTimeout(function(){$("#lopta32").css({"background":"rgb(114, 77, 106)"},200)},390);
+				setTimeout(function(){$("#lopta33").css({"background":"rgb(114, 77, 106)"},200)},420);
+				setTimeout(function(){$("#lopta34").css({"background":"rgb(114, 77, 106)"},200)},450);
+				setTimeout(function(){$("#lopta37").css({"background":"rgb(114, 77, 106)"},200)},480);
+				setTimeout(function(){$("#lopta36").css({"background":"rgb(114, 77, 106)"},200)},510);			
+				setTimeout(function(){$("#lopta35").css({"background":"rgb(114, 77, 106)"},200)},540);
+				setTimeout(function(){$("#lopta29").css({"background":"rgb(114, 77, 106)"},200)},570);
+				setTimeout(function(){$("#lopta27").css({"background":"rgb(114, 77, 106)"},200)},600);
+				setTimeout(function(){$("#lopta26").css({"background":"rgb(114, 77, 106)"},200)},630);
+				setTimeout(function(){$("#lopta25").css({"background":"rgb(114, 77, 106)"},200)},660);
+				setTimeout(function(){$("#lopta23").css({"background":"rgb(114, 77, 106)"},200)},690);			
+				setTimeout(function(){$("#lopta20").css({"background":"rgb(114, 77, 106)"},200)},720);
+				setTimeout(function(){$("#lopta19").css({"background":"rgb(114, 77, 106)"},200)},750);
+				setTimeout(function(){$("#lopta18").css({"background":"rgb(114, 77, 106)"},200)},780);
+				setTimeout(function(){$("#lopta17").css({"background":"rgb(114, 77, 106)"},200)},810);
+				setTimeout(function(){$("#lopta16").css({"background":"rgb(114, 77, 106)"},200)},840);
+				setTimeout(function(){$("#lopta15").css({"background":"rgb(114, 77, 106)"},200)},870);			
+				setTimeout(function(){$("#lopta14").css({"background":"rgb(114, 77, 106)"},200)},900);
+				setTimeout(function(){$("#lopta13").css({"background":"rgb(114, 77, 106)"},200)},930);
+				setTimeout(function(){$("#lopta11").css({"background":"rgb(114, 77, 106)"},200)},960);
+				setTimeout(function(){$("#lopta10").css({"background":"rgb(114, 77, 106)"},200)},990);
+				setTimeout(function(){$("#lopta12").css({"background":"rgb(114, 77, 106)"},200)},1020);
+				setTimeout(function(){$("#lopta7").css({"background":"rgb(114, 77, 106)"},200)},1050);			
+				setTimeout(function(){$("#lopta9").css({"background":"rgb(114, 77, 106)"},200)},1080);
+				setTimeout(function(){$("#lopta6").css({"background":"rgb(114, 77, 106)"},200)},1110);
+				setTimeout(function(){$("#lopta5").css({"background":"rgb(114, 77, 106)"},200)},1110);
+				/*setInterval(function(){
+								m=n+i;
+								$(m).css({"background":"rgb(114, 77, 106)"},200);
+								i++;
+				},30);*/
+			},800);
+			setTimeout(function(){
+				
+				
+				
+				 
+					$("#container4").animate({width:"100%"},50);
+
+				
+				 
+				 	$("#senkal_poz").animate({width:"0px", borderLeftWidth:"0px",borderRightWidth:"0px"},400);
+				 
+				setTimeout(function(){
+					$("#panela").animate({left:"0px"},900);
+					$("#naslov").animate({opacity:"0"},900);
+					$("#text").animate({opacity:"0"},900);
+					$("#drzac").animate({opacity:"0"},900);
+					$("#naslovi").animate({opacity:"0"},900);
+					$("#gorela").animate({top:"9px"},900);
+					$("#kockela").css({"webkitTransform":"translatey(0px)rotatey(50deg)rotatex(0deg)"});
+							
+						setTimeout(function(){
+							setTimeout(function(){
+								$("#jedan").animate({opacity:"1"},500)
+							},200)
+							setTimeout(function(){
+								$("#dva").animate({opacity:"1"},500)
+							},600)
+							setTimeout(function(){
+								$("#tri").animate({opacity:"1"},500)
+							},1000)
+						},400)
+				},50)
+				setTimeout(function(){
+						$("#cont_loptica").animate({opacity:"0"},900);
+					setTimeout(function(){
+						$('#achivement2').css({"-webkit-animation": "achive    3.8s ease-in forwards"});
+						if(ab_circ==0){
+							$('#small_circle').css({"-webkit-animation": "achive_circle   3.8s ease-in forwards"});
+							ab_circ=1;
+							console.log(ab_circ);
+						}
+						setTimeout(function(){
+							$('#small_circle').css({"-webkit-animation": "none"});
+							
+						},3800)
+
+					},200)
+					
+							
+					
+				},950)
+			},1760,function(){
+
+			});
+
+			
+		}	
+
+		$("#about").click(function(){
+			klik_about();
+		});
+		$("#senkal").click(function(){
+			klik_about();
+		});
+		//=============  klik na drugi od 3 tocka===================
+		function klik_skills(){
+			$("#tocak_poz").css({"opacity":"1"});
+			$("#tocak_poz").animate({left:"475", top:"-495", opacity:"0.2", width:"10px", height:"11px"}, 500);
+			$("#container3").css({"width":"100%"});
+
+			setTimeout(function(){
+				setTimeout(function(){$("#lopta4").animate({top:"30", left:"269"},200).css({"background":"#ffbb3f"})},30);
+				setTimeout(function(){$("#lopta6").animate({top:"21", left:"261"},200).css({"background":"#ffbb3f"})},60);
+				setTimeout(function(){$("#lopta16").animate({top:"7", left:"199"},200).css({"background":"#ffbb3f"})},90);
+				setTimeout(function(){$("#lopta17").animate({top:"7", left:"204"},200).css({"background":"#ffbb3f"})},120);
+				setTimeout(function(){$("#lopta8").animate({top:"22", left:"218"},200).css({"background":"#ffbb3f"})},150);			
+				setTimeout(function(){$("#lopta32").animate({top:"30", left:"122"},200).css({"background":"#ffbb3f"})},180);
+				setTimeout(function(){$("#lopta25").animate({top:"45", left:"163"},200).css({"background":"#ffbb3f"})},210);
+				setTimeout(function(){$("#lopta26").animate({top:"45", left:"168"},200).css({"background":"#ffbb3f"})},240);
+				setTimeout(function(){$("#lopta18").animate({top:"13", left:"207"},200).css({"background":"#ffbb3f"})},270);
+				setTimeout(function(){$("#lopta15").animate({top:"14", left:"196"},200).css({"background":"#ffbb3f"})},300);
+				setTimeout(function(){$("#lopta31").animate({top:"37", left:"132"},200).css({"background":"#ffbb3f"})},330);			
+				setTimeout(function(){$("#lopta1").animate({top:"37", left:"275"},200).css({"background":"#ffbb3f"})},360);
+				setTimeout(function(){$("#lopta19").animate({top:"1", left:"187"},200).css({"background":"#ffbb3f"})},390);
+				setTimeout(function(){$("#lopta20").animate({top:"1", left:"192"},200).css({"background":"#ffbb3f"})},420);
+				setTimeout(function(){$("#lopta10").animate({top:"21", left:"251"},200).css({"background":"#ffbb3f"})},450);
+				setTimeout(function(){$("#lopta5").animate({top:"30", left:"271"},200).css({"background":"#ffbb3f"})},480);
+				setTimeout(function(){$("#lopta36").animate({top:"22", left:"99"},200).css({"background":"#ffbb3f"})},510);	
+				setTimeout(function(){$("#lopta35").animate({top:"26", left:"127"},200).css({"background":"#ffbb3f"})},510);			
+				setTimeout(function(){$("#lopta28").animate({top:"30", left:"131"},200).css({"background":"#ffbb3f"})},540);
+				setTimeout(function(){$("#lopta27").animate({top:"51", left:"155"},200).css({"background":"#ffbb3f"})},570);
+				setTimeout(function(){$("#lopta29").animate({top:"51", left:"156"},200).css({"background":"#ffbb3f"})},600);
+				setTimeout(function(){$("#lopta11").animate({top:"7", left:"237"},200).css({"background":"#ffbb3f"})},630);
+				setTimeout(function(){$("#lopta14").animate({top:"13", left:"230"},200).css({"background":"#ffbb3f"})},660);
+				setTimeout(function(){$("#lopta38").animate({top:"37", left:"135"},200).css({"background":"#ffbb3f"})},690);			
+				setTimeout(function(){$("#lopta2").animate({top:"44", left:"245"},200).css({"background":"#ffbb3f"})},720);
+				setTimeout(function(){$("#lopta30").animate({top:"45", left:"162"},200).css({"background":"#ffbb3f"})},750);
+				setTimeout(function(){$("#lopta34").animate({top:"37", left:"111"},200).css({"background":"#ffbb3f"})},780);
+				setTimeout(function(){$("#lopta12").animate({top:"7", left:"206"},200).css({"background":"#ffbb3f"})},810);
+				setTimeout(function(){$("#lopta13").animate({top:"14", left:"195"},200).css({"background":"#ffbb3f"})},840);
+				setTimeout(function(){$("#lopta7").animate({top:"26", left:"239"},200).css({"background":"#ffbb3f"})},870);
+				
+				
+					
+				
+				setTimeout(function(){$("#tocak_poz").animate({opacity:"1"},300)},1000);
+				
+				setTimeout(function(){$("#drzac").animate({opacity:"0"},900)},200);
+				setTimeout(function(){$("#naslovi").animate({opacity:"0"},900)},200);
+				setTimeout(function(){$("#text").animate({opacity:"0"},900)},200);
+				setTimeout(function(){$("#naslov").animate({opacity:"0"},900)},200);
+					
+				setTimeout(function(){
+					$("#cont_loptica").animate({opacity:"0"},10);
+					},1400)
+					$("#tocak_poz").animate({width:"46px", height:"46px", left:"458px",top:"-512"},850);
+				setTimeout(function(){
+						$("#lopta1").animate({top:"45",left:"276"},10);
+						$("#lopta2").animate({top:"69",left:"260"},10);
+						$("#lopta3").animate({top:"21",left:"244"},10);
+						$("#lopta4").animate({top:"39",left:"280"},10);
+						$("#lopta5").animate({top:"34",left:"288"},10);
+						$("#lopta6").animate({top:"26",left:"280"},10);
+						$("#lopta7").animate({top:"31",left:"288"},10);
+						$("#lopta8").animate({top:"39",left:"283"},10);
+						$("#lopta9").animate({top:"14",left:"227"},10);
+						$("#lopta10").animate({top:"23",left:"272"},10);
+
+						$("#lopta11").animate({top:"10",left:"244"},10);
+						$("#lopta12").animate({top:"3",left:"244"},10);
+						$("#lopta13").animate({top:"8",left:"244"},10);
+						$("#lopta14").animate({top:"-3",left:"232"},10);
+						$("#lopta15").animate({top:"-9",left:"224"},10);
+						$("#lopta16").animate({top:"99",left:"214"},10);
+						$("#lopta17").animate({top:"-11",left:"205"},10);
+						$("#lopta18").animate({top:"-15",left:"207"},10);
+						$("#lopta19").animate({top:"-19",left:"209"},10);
+						$("#lopta20").animate({top:"-13",left:"209"},10);
+
+						$("#lopta21").animate({top:"21",left:"194"},10);
+						$("#lopta22").animate({top:"30",left:"190"},10);
+						$("#lopta23").animate({top:"37",left:"180"},10);
+						$("#lopta24").animate({top:"37",left:"167"},10);
+						$("#lopta25").animate({top:"45",left:"168"},10);
+						$("#lopta26").animate({top:"53",left:"164"},10);
+						$("#lopta27").animate({top:"61",left:"160"},10);
+						$("#lopta28").animate({top:"42",left:"176"},10);
+						$("#lopta29").animate({top:"77",left:"152"},10);
+						$("#lopta30").animate({top:"85",left:"148"},10);
+
+
+						$("#lopta31").animate({top:"92",left:"141"},10);
+						$("#lopta32").animate({top:"100",left:"134"},10);
+						$("#lopta33").animate({top:"14",left:"140"},10);
+						$("#lopta34").animate({top:"92",left:"137"},10);
+						$("#lopta35").animate({top:"-5",left:"138"},10);
+						$("#lopta36").animate({top:"106",left:"139"},10);
+						$("#lopta37").animate({top:"30",left:"108"},10);
+						$("#lopta38").animate({top:"108",left:"107"},10);
+						var n='#lopta';
+						var i=1;
+			 			var ponavlja=setInterval(function(){
+								if (i>40) {clearInterval(ponavlja)} else {
+									m=n+i;
+									$(m).css({"background":"white"});
+									i++;
+								}	
+							},30);
+				},1500)
+
+
+
+			
+				setTimeout(function(){
+					$("#tocak_poz").animate({top: "-536px"},350);
+					$("#gorela1").animate({top:"9px"},900);
+					$('#achivement3').css({"-webkit-animation": "achive    3.8s ease-in forwards"});
+					if (sk_circ==0){
+						$('#small_circle').css({"-webkit-animation": "achive_circle   3.8s ease-in forwards"});
+						sk_circ=1;
+						console.log(sk_circ);
+					}
+					setTimeout(function(){
+						$('#small_circle').css({"-webkit-animation": "none"});
+						
+						
+					},3800)
+					
+
+
+
+
+
+				},1280)
+				
+				setTimeout(function(){
+					$("#fronte").animate({opacity:"1"},1500);
+					setTimeout(function(){
+						$("#ht").animate({opacity:"1"},1000);
+						$("#html").animate({opacity:"1"},1000);
+						$("#put_html").animate({opacity:"1"},1000);
+						$('#okretalica4').css({"-webkit-animation": "rotor 2.3s infinite linear  forwards"});
+					},1200);
+					
+					setTimeout(function(){
+						$("#put_html").animate({opacity:"0.3"},300);
+						$("#cs").animate({opacity:"1"},1000);
+						$("#css").animate({opacity:"1"},1000);
+						$("#put_css").animate({opacity:"1"},1000);
+						$('#okretalica1').css({"-webkit-animation": "rotor 4.4s infinite linear  forwards"});
+					},2200);
+					
+					setTimeout(function(){
+						$("#put_css").animate({opacity:"0.3"},300);
+						$("#js").animate({opacity:"1"},1000);
+						$("#javascript").animate({opacity:"1"},1000);
+						$("#put_java").animate({opacity:"1"},1000);
+						$('#okretalica').css({"-webkit-animation": "rotor 8s infinite linear  forwards"});
+						$('#info_put_jq').css({"-webkit-animation": "rotora 16s infinite linear  forwards"});
+					},3200);
+
+					setTimeout(function(){
+						$("#put_java").animate({opacity:"0.3"},300);
+						$("#jq").animate({opacity:"1"},1000);
+						$("#jquery").animate({opacity:"1"},1000);
+						$("#put_jq").animate({opacity:"1"},1000);
+
+						//ovde fali kod 
+						
+					},4200);
+
+					setTimeout(function(){
+						$("#backe").animate({opacity:"1"},1500);
+						$("#put_jq").animate({opacity:"0.3"},300);
+
+						
+					},5200);
+					setTimeout(function(){
+						$("#ph").animate({opacity:"1"},1000);
+						$("#php").animate({opacity:"1"},1000);
+						$("#put_php").animate({opacity:"1"},1000);
+						$('#okretalica2').css({"-webkit-animation": "rotora 12.2s infinite linear  forwards"});
+					},6400);
+					
+					setTimeout(function(){	
+						$("#put_php").animate({opacity:"0.3"},300);
+						$("#my").animate({opacity:"1"},1000);
+						$("#mysql").animate({opacity:"1"},1000);
+						$("#put_mysql").animate({opacity:"1"},1000);
+						$('#okretalica3').css({"-webkit-animation": "rotora 10.7s infinite linear  forwards"});
+					},7400);	
+					setTimeout(function(){	
+						$("#put_mysql").animate({opacity:"0.3"},300);
+					},8400)
+					setTimeout(function(){
+						setTimeout(function(){
+							$("#jedan1").animate({opacity:"1"},500)
+						},200)
+						setTimeout(function(){
+							$("#dva1").animate({opacity:"1"},500)
+						},600)
+						setTimeout(function(){
+							$("#tri1").animate({opacity:"1"},500)
+						},1000)
+					},7400)
+				},1680)	
+
+			},300)
+		
+		}
+		$("#skills").click(function(){
+			if(faza==2){
+				klik_skills();
+			}
+		});
+		$("#tocak").click(function(){
+			if(faza==2){
+				klik_skills();
+			}
+		});
+
+
+		//=========================== Klik treci tocak ==========================================//
+
+		function klik_portfolio(){
+			$("#senkad_poz").css({"opacity":"1"});
+			$("#senkad_poz").animate({left:"452px", top:"-391px", opacity:"0.2", width:"72px", height:"45px", borderRadius:"0px"}, 500);
+			$("#container5").css({"width":"100%"});
+			
+			setTimeout(function(){
+				$("#naslovi").animate({opacity:"0"},1000);
+				$("#naslov").animate({opacity:"0"},1000);
+				$("#text").animate({opacity:"0"},1000);
+				$("#drzac").animate({opacity:"0"},1000);
+				$("#cont_loptica").animate({opacity:"0"},1000);
+				$("#senkad_poz").animate({opacity:"0"},1000);
+			},400)
+			setTimeout(function(){
+				$("#nema_pravila").animate({opacity:"1"},1000);
+				$("#opis").animate({opacity:"1"},1000);
+				$("#gorela2").animate({top:"9px"},900);
+			},1000)
+
+			setTimeout(function(){
+				$('#achivement4').css({"-webkit-animation": "achive    3.8s ease-in forwards"});
+					if (po_circ==0){
+						$('#small_circle').css({"-webkit-animation": "achive_circle   3.8s ease-in forwards"});
+						po_circ=1;
+						console.log(po_circ);
+					}
+
+				setTimeout(function(){
+					$('#small_circle').css({"-webkit-animation": "none"});
+					
+				},3800)
+				
+
+			},1400)	
+			setTimeout(function(){
+				setTimeout(function(){
+					$("#jedan2").animate({opacity:"1"},500)
+				},200)
+				setTimeout(function(){
+					$("#dva2").animate({opacity:"1"},500)
+				},600)
+				setTimeout(function(){
+					$("#tri2").animate({opacity:"1"},500)
+				},1000)
+			},1200)
+
+		}
+		$("#portfolio").click(function(){
+			klik_portfolio();
+		});
+		$("#senkad").click(function(){
+			klik_portfolio();
+		});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		//=========================== Funkcije hover elemenata legende ==========================// 
+		$("#fronte").mouseenter(function(){
+			$("#put_html").animate({opacity:"1"},400);
+			$("#put_css").animate({opacity:"1"},400);
+			$("#put_java").animate({opacity:"1"},400);
+			$("#put_jq").animate({opacity:"1"},400);
+
+			$("#fronte").css({"color":"rgba(207, 96, 127, 1)"});
+			
+
+		});
+		$("#backe").mouseenter(function(){
+			$("#put_php").animate({opacity:"1"},400);
+			$("#put_mysql").animate({opacity:"1"},400);
+			$("#backe").css({"color":"rgba(207, 96, 127, 1)"});
+
+		});
+
+
+		$("#ht").mouseenter(function(){
+			$("#put_html").animate({opacity:"1"},400);
+			$("#ht").css({"color":"rgb(255, 133, 0)"});
+
+		});
+		$("#cs").mouseenter(function(){
+			$("#put_css").animate({opacity:"1"},400);
+			$("#cs").css({"color":"#A76641"});
+
+		});
+		$("#js").mouseenter(function(){
+			$("#put_java").animate({opacity:"1"},400);
+			$("#js").css({"color":"#DA4E43"});
+
+		});
+		$("#jq").mouseenter(function(){
+			$("#put_jq").animate({opacity:"1"},400);
+			$("#jq").css({"color":"#616B74"});
+
+		});
+		$("#ph").mouseenter(function(){
+			$("#put_php").animate({opacity:"1"},400);
+			$("#ph").css({"color":"#367718"});
+
+		});
+		$("#my").mouseenter(function(){
+			$("#put_mysql").animate({opacity:"1"},400);
+			$("#my").css({"color":"#2797B3"});
+
+		});
+
+
+
+		$("#fronte").mouseout(function(){
+			$("#put_html").animate({opacity:"0.3"},400);
+			$("#put_css").animate({opacity:"0.3"},400);
+			$("#put_java").animate({opacity:"0.3"},400);
+			$("#put_jq").animate({opacity:"0.3"},400);
+			$("#fronte").css({"color":"rgba(167, 123, 130, 1)"});
+
+		});
+		$("#backe").mouseout(function(){
+			$("#put_php").animate({opacity:"0.3"},400);
+			$("#put_mysql").animate({opacity:"0.3"},400);
+			$("#backe").css({"color":"rgba(167, 123, 130, 1)"});
+
+		});
+
+
+		$("#ht").mouseout(function(){
+			$("#put_html").animate({opacity:"0.3"},400);
+			$("#ht").css({"color":"white"});
+		});
+		$("#cs").mouseout(function(){
+			$("#put_css").animate({opacity:"0.3"},400);
+			$("#cs").css({"color":"white"});
+
+		});
+		$("#js").mouseout(function(){
+			$("#put_java").animate({opacity:"0.3"},400);
+			$("#js").css({"color":"white"});
+
+		});
+		$("#jq").mouseout(function(){
+			$("#put_jq").animate({opacity:"0.3"},400);
+			$("#jq").css({"color":"white"});
+
+		});
+		$("#ph").mouseout(function(){
+			$("#put_php").animate({opacity:"0.3"},400);
+			$("#ph").css({"color":"white"});
+
+		});
+		$("#my").mouseout(function(){
+			$("#put_mysql").animate({opacity:"0.3"},400);
+			$("#my").css({"color":"white"});
+
+		});
+
+		////=================================================================================////
+
+		
+		
+
+		
+
+		$(document).ready(function(){
+
+			
+
+			$("#tocak").click(function(){
+				
+
+
+			});
+
+			$("#krug").click(function(){
+				$("#krug").css({"left":"290"});
+				$("#hi").animate({opacity:"0"},100);
+				$("#krug").animate({width:"100px", height:"100px", borderWidth:"7px" , top:"140px", left:"418px"},400);
+				$("#krug").delay(500).css({"-webkit-animation": "krugr 3s infinite forwards"});
+				$("#jagoda").delay(2000).animate({opacity:"1"});
+				$("#container3").animate({width:"100%"});
+				$("#container3").delay(2000).animate({opacity:"1"},4000);
+
+
+			});
+			$("#button3").click(function(){
+				$("#container4").animate({width:"100%"},1000);
+
+			});
+			$("#tocak").animate({opacity:"1"},700);
+			$("#static").animate({opacity:"1"},2000);
+			$("#static").animate({opacity:"0"},2000);
+		});
+
+		///================================== Pocetak stranice=====================================//
+		$(document).ready(function(){
+			setTimeout(function(){
+				$("#naslov").animate({opacity:"1"},1000, function(){
+					$("#text").animate({opacity:"1"},1000,function(){$("#button1").animate({opacity:"1"},1000);
+					});
+				});
+				
+				
+			},4000);
+		});
+			$('#ht').click(function() {
+				if ($('#html').css("opacity")==0){
+					$('#html').animate({opacity:"1"},1000);
+
+				} else {
+					$('#html').animate({opacity:"0"},1000);
+				}
+			});
+			$('#cs').click(function() {
+				if ($('#css').css("opacity")==0){
+					$('#css').animate({opacity:"1"},1000);
+
+				} else {
+					$('#css').animate({opacity:"0"},1000);
+				}
+			});
+			$('#js').click(function() {
+				if ($('#javascript').css("opacity")==0){
+					$('#javascript').animate({opacity:"1"},1000);
+
+				} else {
+					$('#javascript').animate({opacity:"0"},1000);
+				}
+			});
+			$('#ph').click(function() {
+				if ($('#php').css("opacity")==0){
+					$('#php').animate({opacity:"1"},1000);
+
+				} else {
+					$('#php').animate({opacity:"0"},1000);
+				}
+			});
+			$('#bt').click(function() {
+				if ($('#bootstrap').css("opacity")==0){
+					$('#bootstrap').animate({opacity:"1"},1000);
+
+				} else {
+					$('#bootstrap').animate({opacity:"0"},1000);
+				}
+			});
+			$('#jq').click(function() {
+				if ($('#jquery').css("opacity")==0){
+					$('#jquery').animate({opacity:"1"},1000);
+
+				} else {
+					$('#jquery').animate({opacity:"0"},1000);
+				}
+			});
+			$('#my').click(function() {
+				if ($('#mysql').css("opacity")==0){
+					$('#mysql').animate({opacity:"1"},1000);
+
+				} else {
+					$('#mysql').animate({opacity:"0"},1000);
+				}
+			});
+			$('#an').click(function() {
+				if ($('#angular').css("opacity")==0){
+					$('#angular').animate({opacity:"1"},1000);
+
+				} else {
+					$('#angular').animate({opacity:"0"},1000);
+				}
+			});
+
+
+		//================= hover loptica za povratak===========================///
+
+		$("#povratak").mouseenter(function(){
+				$("#jedan").css({"background":"rgb(114, 77, 106)"});
+				$("#dva").css({"background":"#ffbb3f"});
+				$("#tri").css({"background":"gray"});
+		});
+		$("#povratak").mouseout(function(){
+			$("#jedan").css({"background":"none"});
+			$("#dva").css({"background":"none"});
+			$("#tri").css({"background":"none"});
+		});
+		$("#jedan").mouseenter(function(){
+				$("#jedan").css({"background":"rgb(114, 77, 106)"});
+				$("#dva").css({"background":"#ffbb3f"});
+				$("#tri").css({"background":"gray"});
+		});
+
+		$("#dva").mouseenter(function(){
+				$("#jedan").css({"background":"rgb(114, 77, 106)"});
+				$("#dva").css({"background":"#ffbb3f"});
+				$("#tri").css({"background":"gray"});
+		});
+		$("#tri").mouseenter(function(){
+				$("#jedan").css({"background":"rgb(114, 77, 106)"});
+				$("#dva").css({"background":"#ffbb3f"});
+				$("#tri").css({"background":"gray"});
+		});
+
+
+
+		$("#povratak1").mouseenter(function(){
+				$("#jedan1").css({"background":"rgb(114, 77, 106)"});
+				$("#dva1").css({"background":"#ffbb3f"});
+				$("#tri1").css({"background":"gray"});
+		});
+		$("#povratak1").mouseout(function(){
+			$("#jedan1").css({"background":"none"});
+			$("#dva1").css({"background":"none"});
+			$("#tri1").css({"background":"none"});
+		});
+		$("#jedan1").mouseenter(function(){
+				$("#jedan1").css({"background":"rgb(114, 77, 106)"});
+				$("#dva1").css({"background":"#ffbb3f"});
+				$("#tri1").css({"background":"gray"});
+		});
+
+		$("#dva1").mouseenter(function(){
+				$("#jedan1").css({"background":"rgb(114, 77, 106)"});
+				$("#dva1").css({"background":"#ffbb3f"});
+				$("#tri1").css({"background":"gray"});
+		});
+		$("#tri1").mouseenter(function(){
+				$("#jedan1").css({"background":"rgb(114, 77, 106)"});
+				$("#dva1").css({"background":"#ffbb3f"});
+				$("#tri1").css({"background":"gray"});
+		});
+
+
+
+		$("#povratak2").mouseenter(function(){
+				$("#jedan2").css({"background":"rgb(114, 77, 106)"});
+				$("#dva2").css({"background":"#ffbb3f"});
+				$("#tri2").css({"background":"gray"});
+		});
+		$("#povratak2").mouseout(function(){
+			$("#jedan2").css({"background":"none"});
+			$("#dva2").css({"background":"none"});
+			$("#tri2").css({"background":"none"});
+		});
+		$("#jedan2").mouseenter(function(){
+				$("#jedan2").css({"background":"rgb(114, 77, 106)"});
+				$("#dva2").css({"background":"#ffbb3f"});
+				$("#tri2").css({"background":"gray"});
+		});
+
+		$("#dva2").mouseenter(function(){
+				$("#jedan2").css({"background":"rgb(114, 77, 106)"});
+				$("#dva2").css({"background":"#ffbb3f"});
+				$("#tri2").css({"background":"gray"});
+		});
+		$("#tri2").mouseenter(function(){
+				$("#jedan2").css({"background":"rgb(114, 77, 106)"});
+				$("#dva2").css({"background":"#ffbb3f"});
+				$("#tri2").css({"background":"gray"});
+		});
+
+
+
+		//=================================== povratak sa about me ======================================//
+	 	$("#povratak").click(function(){
+	 		$("#tri").css({"-webkit-animation":"zbogom 1s ease-in forwards"});
+	 		setTimeout(function(){
+	 			$("#dva").css({"-webkit-animation":"zbogom 1s ease-in forwards"});
+	 		},300)
+	 		setTimeout(function(){
+	 			$("#jedan").css({"-webkit-animation":"zbogom 1s ease-in forwards"});
+	 		},600)
+	 		setTimeout(function(){
+	 			$("#kockela").css({"webkitTransform":"translatey(-599px)rotatey(50deg)rotatex(0deg)"});
+	 			$("#panela").animate({left:"-420px"},1000);
+	 			$("#gorela").animate({top:"-100px"},400);	
+	 			var n='#lopta';
+				var i=1;
+	 			var ponavlja=setInterval(function(){
+								if (i>40) {clearInterval(ponavlja)} else {
+									m=n+i;
+									$(m).css({"background":"white"});
+									i++;
+								}	
+							},30);
+							
+
+	 			setTimeout(function(){	
+		 			$("#naslov").animate({opacity:"1"},700);
+					$("#text").animate({opacity:"1"},700);
+					$("#drzac").animate({opacity:"1"},700);
+					$("#naslovi").animate({opacity:"1"},700);
+					$("#container4").animate({width:"0%"});
+					$("#senkal").css({"background":"none"});
+					$("#cont_loptica").animate({opacity:"1"},700);
+					$("#senkal_poz").css({"top":"-71px", "left":"137px", "height":"100px", "width":"100px" ,"borderWidth":"5px","borderRadius":"150px","opacity":"0"});
+					
+					setTimeout(function(){
+						$("#jedan").css({"-webkit-animation":"none"});
+						$("#dva").css({"-webkit-animation":"none"});
+						$("#tri").css({"-webkit-animation":"none"});
+						$("#jedan").animate({opacity:"0"},200);
+						$("#dva").animate({opacity:"0"},200);
+						$("#tri").animate({opacity:"0"},200);
+					 },500)
+					setTimeout(function(){
+						$("#jedan").css({"-webkit-animation":"none"});
+						$("#dva").css({"-webkit-animation":"none"});
+						$("#tri").css({"-webkit-animation":"none"});
+					},1000)
+				},200)
+
+	 		},1300)
+
+	 	});
+
+		$("#senkal").mouseout(function(){
+			$("#senkal").css({"background":"none"});
+			$("#senkal_poz").css({"opacity":"0"});
+		});
+		$("#about").mouseout(function(){
+			$("#senkal").css({"background":"none"});
+			$("#senkal_poz").css({"opacity":"0"});
+		});
+	//================================== povratak sa skilsa =================================================//
+	
+		$("#povratak1").click(function(){
+	 		$("#tri1").css({"-webkit-animation":"zbogom 1s ease-in forwards"});
+	 		setTimeout(function(){
+	 			$("#dva1").css({"-webkit-animation":"zbogom 1s ease-in forwards"});
+	 		},300)
+	 		setTimeout(function(){
+	 			$("#jedan1").css({"-webkit-animation":"zbogom 1s ease-in forwards"});
+	 		},600)
+	 	
+
+	 		setTimeout(function(){
+	 			$("#put_mysql").animate({opacity:"0"},400);
+	 			$("#mysql").animate({opacity:"0"},400);
+	 			$("#my").animate({opacity:"0"},400);
+
+	 		},300)
+	 		setTimeout(function(){
+	 			$("#put_php").animate({opacity:"0"},400);
+	 			$("#php").animate({opacity:"0"},400);
+	 			$("#ph").animate({opacity:"0"},400);
+	 		},600)
+	 		setTimeout(function(){
+	 			$("#put_jq").animate({opacity:"0"},400);
+	 			$("#jquery").animate({opacity:"0"},400);
+	 			$("#jq").animate({opacity:"0"},400);
+	 		},900)
+	 		setTimeout(function(){
+	 			$("#put_java").animate({opacity:"0"},400);
+	 			$("#javascript").animate({opacity:"0"},400);
+	 			$("#js").animate({opacity:"0"},400);
+	 			$("#jedan1").animate({opacity:"0"},10);
+				$("#dva1").animate({opacity:"0"},10);
+				$("#tri1").animate({opacity:"0"},10);
+	 		},1200)
+	 		setTimeout(function(){
+	 			$("#put_css").animate({opacity:"0"},400);
+	 			$("#css").animate({opacity:"0"},400);
+	 			$("#cs").animate({opacity:"0"},400);
+	 		},1500)
+	 		setTimeout(function(){
+	 			$("#put_html").animate({opacity:"0"},400);
+	 			$("#html").animate({opacity:"0"},400);
+	 			$("#ht").animate({opacity:"0"},400);
+	 		},1800)
+	 		setTimeout(function(){
+				
+				$("#backe").animate({opacity:"0"},400);
+				$("#fronte").animate({opacity:"0"},400);
+				$("#tocak_poz").animate({opacity:"0"},400);
+
+				
+				
+
+			},2100)
+	 		setTimeout(function(){
+	 		
+	 		$("#naslov").animate({opacity:"1"},1000);
+	 		$("#naslovi").animate({opacity:"1"},1000);
+	 		$("#text").animate({opacity:"1"},1000);
+	 		$("#container3").animate({width:"0%"},100);
+	 		$("#drzac").animate({opacity:"1"},1000);
+	 		$("#gorela1").animate({top:"-100px"},400);
+	 		$("#jedan1").css({"-webkit-animation":"none"});
+			$("#dva1").css({"-webkit-animation":"none"});
+			$("#tri1").css({"-webkit-animation":"none"});
+
+	 		},2400)
+	 		setTimeout(function(){
+
+	 		$("#cont_loptica").animate({opacity:"1"},1000);
+	 		$("#tocak_poz").animate({left:"437px", top:"-320px", height:"100px", width:"100px"},10);
+	 		},2800)
+	 	});
+	///========================================== povratak sa portfolio ==============================================///
+	
+		$("#povratak2").click(function(){
+	 		$("#tri2").css({"-webkit-animation":"zbogom 1s ease-in forwards"});
+	 		setTimeout(function(){
+	 			$("#dva2").css({"-webkit-animation":"zbogom 1s ease-in forwards"});
+	 		},300)
+	 		setTimeout(function(){
+	 			$("#jedan2").css({"-webkit-animation":"zbogom 1s ease-in forwards"});
+	 		},600)
+
+	 		setTimeout(function(){
+	 			$("#nema_pravila").animate({opacity:"0"},700);
+	 			$("#opis").animate({opacity:"0"},700);
+	 			$("#gorela2").animate({top:"-100"},1000);
+	 			
+	 		},1000)
+	 		setTimeout(function(){
+	 			$("#naslov").animate({opacity:"1"},800);
+	 			$("#naslovi").animate({opacity:"1"},800);
+	 			$("#text").animate({opacity:"1"},800);
+	 			$("#drzac").animate({opacity:"1"},800);
+
+	 			$("#cont_loptica").animate({opacity:"1"},800);
+	 			$("#jedan2").animate({opacity:"0"},10);
+	 			$("#dva2").animate({opacity:"0"},10);
+	 			$("#tri2").animate({opacity:"0"},10);
+	 			
+	 		},1700)
+	 		setTimeout(function(){
+	 			$("#container5").css({"width":"0%"});
+	 			$("#tri2").css({"-webkit-animation":"none"});
+	 			$("#dva2").css({"-webkit-animation":"none"});
+	 			$("#jedan2").css({"-webkit-animation":"none"});
+	 			
+	 			$("#senkad_poz").css({"left":"737px", "top":"-209px", "width":"100px", "height":"100px", "borderRadius":"100px"});
+
+	 		},3600)
+	 	});
+
+
+
+
+
+
+
+
+
+
+
+
+	//============================ portfolio items hover =====================================================///	
+			$("#prvak").mouseenter(function(){
+				$("#prvak").animate({opacity:"1"},300);
+			});
+			$("#prvak").mouseout(function(){
+				$("#prvak").animate({opacity:"0.7"},300);
+			});
+			$("#drugak").mouseenter(function(){
+				$("#drugak").animate({opacity:"1"},300);
+			});
+			$("#drugak").mouseout(function(){
+				$("#drugak").animate({opacity:"0.7"},300);
+			});
+
+			$("#trecak").mouseenter(function(){
+				$("#trecak").animate({opacity:"1"},300);
+			});
+			$("#trecak").mouseout(function(){
+				$("#trecak").animate({opacity:"0.7"},300);
+			});
+	//============================ portfolio items click =====================================================///
+
+			$("#prvak").click(function(){
+				$("#opis_naslov").text("Zoharica");
+				$("#opis_tekst").text("This is the first website that I created. Yet unfinished it has some basic functions. The page \"Glasanje\" has voting and results, done through Php and Mysql. When the vote is triggered it grabs the voters ip adress and checks if the adress exist in the .txt file. If true the vote is blocked. If false it increases the variable for selected person by one, and puts voters adress in the .txt. The .txt file is erased on the end of the day. It's not very reliable code, and should be done through login system because of dynamic IP.On the first page you can put an username, then the cookie is created with 1 hour expiration. That username is used in the last voted section after voting. It also grabs the time of voting. Everything is sent to Mysql database and on the pageload it loads the information and stores it into variables. This website is created for fun and experimenting and don't take it serious. As I said it's unfinished, because I started interesting more in frontend and started other projects.  ");
+				$("#opis>a").attr("href", "http://www.zoharica.heliohost.org");
+				$("#prvak").css({"opacity":"1"});
+			});
+			$("#drugak").click(function(){
+				$("#opis_naslov").text("Portfolio");
+				$("#opis_tekst").text("The animations on this website are mostly done in CSS and triggered with JavaScript and Jquery. At the begining we see rotating circle that after click creates 3 sub menus. Hover on sub menu elements uses jquery's animate function to animate positions of 38 small circles. The drawers on the first page are made rotating div elements in 3D, and the logic behind opening and shuting separate drawers is controled with bunch of IF statements combining 4 separate functions. The website is semi-responsive, using (Screen width - 1024)/2 and adding it to the left property of div elements. 1024 is the width of my monitor and everything different then that is fixed with this function so the elements are perfectly horisontaly aligned. The function trigers on pageload and on resize. The rotation of the planets on skills page is @keyframes animation, it rotates the parent element of particular planet and the planet div is just moved away from the center.");
+				$("#opis>a").attr("href", "http://www.zoharica.heliohost.org/portfolio/port.html");
+				$("#drugak").css({"opacity":"1"});
+			});	
+			$("#trecak").click(function(){
+				$("#opis_naslov").text("Ckica");
+				$("#opis_tekst").text("This is the cube from my sandbox. Experimenting with 3D.  ");
+				$("#opis>a").attr("href", "http://www.zoharica.heliohost.org/ckica.html");
+
+			});
+
+	</script>
+</body>
+</html>

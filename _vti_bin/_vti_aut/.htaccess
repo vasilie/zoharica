@@ -1,0 +1,18 @@
+# -FrontPage-
+
+Options +FollowSymlinks
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+require group authors administrators
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthType Passthrough
+AuthName zoharica.heliohost.org
+AuthUserFile /home1/zoharica/public_html/_vti_pvt/service.pwd
+AuthGroupFile /home1/zoharica/public_html/_vti_pvt/service.grp

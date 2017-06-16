@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<meta charset="UTF-8">
+	<title>Sidemenu - Test</title>
+<style>
+	.container {
+		height: 650px;
+		width: 320px;
+		border:1px solid black;
+		-webkit-perspective:600px;
+		margin-left: 200px;
+		overflow: hidden;
+		background: darkcyan;
+	}
+	.menu {
+		height: 100%;
+		width: 50px;
+		
+
+
+
+	}
+	.item {
+		width: 68px;
+		height: 68px;
+		position: relative;
+		background-color: indianred;
+		color: white;
+		border:1px solid gray;
+		
+		display: block;
+		text-decoration: none;
+		text-align: center;
+		line-height: 70px;
+		transition:all 0.7s;
+		box-shadow: 2px 2px 15px black;
+
+	}
+	.item:hover {
+		background: darkred;
+	}
+	.rot {
+		transition:all 0.3s;
+		width: 0px;
+	}
+
+
+
+</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="menu">
+			<div id="mi-1" class="rot" onClick="hide_menu()"> <a href="#" class="item" onClick="hide_menu()">X</a> </div>
+			<div id="mi-2" class="rot" > <a href="#" class="item" onClick="hide_menu()">Item</a> </div>
+			<div id="mi-3" class="rot" > <a href="#" class="item" onClick="hide_menu()">Item</a> </div>
+			<div id="mi-4" class="rot" > <a href="#" class="item" onClick="hide_menu()">Item</a> </div>
+			<div id="mi-5" class="rot" > <a href="#" class="item" onClick="hide_menu()">Item</a> </div>
+			<div id="mi-6" class="rot" > <a href="#" class="item" onClick="hide_menu()">Item</a> </div>
+			<div id="mi-7" class="rot" > <a href="#" class="item" onClick="hide_menu()">Item</a> </div>
+			<div id="mi-8" class="rot" > <a href="#" class="item" onClick="show_menu()">show</a> </div>
+
+		</div>
+	</div>
+
+<script>
+var x = 0;
+	function hide_menu() {
+
+			$("#mi-1").css({"webkitTransform":"rotateY(105deg)"},400);
+		setTimeout(function(){
+			$("#mi-2").css({"webkitTransform":"rotateY(105deg)"},400);
+		},100)
+		setTimeout(function(){
+			$("#mi-3").css({"webkitTransform":"rotateY(105deg)"},400);
+		},200)
+		setTimeout(function(){
+			$("#mi-4").css({"webkitTransform":"rotateY(105deg)"},400);
+		},300)
+		setTimeout(function(){
+			$("#mi-5").css({"webkitTransform":"rotateY(105deg)"},400);
+		},400)
+		setTimeout(function(){
+			$("#mi-6").css({"webkitTransform":"rotateY(105deg)"},400);
+		},500)
+		setTimeout(function(){
+			$("#mi-7").css({"webkitTransform":"rotateY(105deg)"},400);
+		},600)
+		x=1;
+	}
+	function show_menu() {
+
+			$("#mi-1").css({"webkitTransform":"rotateY(0deg)"},400);
+		setTimeout(function(){
+			$("#mi-2").css({"webkitTransform":"rotateY(0deg)"},400);
+		},100)
+		setTimeout(function(){
+			$("#mi-3").css({"webkitTransform":"rotateY(0deg)"},400);
+		},200)
+		setTimeout(function(){
+			$("#mi-4").css({"webkitTransform":"rotateY(0deg)"},400);
+		},300)
+		setTimeout(function(){
+			$("#mi-5").css({"webkitTransform":"rotateY(0deg)"},400);
+		},400)
+		setTimeout(function(){
+			$("#mi-6").css({"webkitTransform":"rotateY(0deg)"},400);
+		},500)
+		setTimeout(function(){
+			$("#mi-7").css({"webkitTransform":"rotateY(0deg)"},400);
+		},600)
+		x=0;
+	}
+
+
+</script>	
+</body>
+</html>

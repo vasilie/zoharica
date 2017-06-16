@@ -1,0 +1,1436 @@
+
+<html>
+<head>
+	<title>portfolio - test</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="jquery.js"></script>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="animacijeloptice.css" type="text/css">
+	<script type="text/javascript">
+		var sirina = window.innerWidth;
+		console.log(sirina);
+
+		function pozicija(){
+			var sirina = window.innerWidth;
+			var dopuna=(sirina-1024)/2;
+			document.getElementById("naslovi").style.left=dopuna;
+			document.getElementById("cont_loptica").style.left=dopuna+220;
+
+		}
+		$(window).on("resize", pozicija);
+
+	</script>
+</head>
+<body onload="pozicija()">
+	<style type="text/css">
+		
+		body {
+			font-family: MohaveBold;
+			margin: 0px;
+			padding: 0px;
+		}	
+
+
+		#container1 {
+			background-image: url('stardust.png');
+			width: 100%;
+			height:100%;
+			position:absolute;
+			z-index: 1;
+			
+			overflow: hidden;
+
+		} 
+		#tekst {
+			color: white;
+			position: relative;
+			font-size: 15px;
+			padding: 10px;
+			opacity: 1;
+		}
+		@font-face {
+    		 font-family: MohaveBold;
+    		 src: url('Mohave-Bold.otf'); 
+			}
+		@font-face {
+    		 font-family: Mohave;
+    		 src: url('Mohave.otf'); 
+			}
+
+		#container2 {
+			width: 0%;
+
+			height:100%;
+			position:absolute;
+			z-index: 2;
+			background-color: none;
+			overflow: hidden;
+		} 	
+		#container3 {
+			width: 0%;
+			height:100%;
+			position:absolute;
+			z-index: 3;
+			background-image: url('stardust.png');
+			background-repeat: repeat;
+			float: right;
+			overflow: hidden;
+			opacity: 1;
+		} 
+		#container4 {
+			width: 0%;
+			height:100%;
+			position:absolute;
+			z-index: 54;
+			
+			
+			background: rgb(114, 77, 106);
+			opacity: 1;
+		} 
+		#button1 {
+			position: relative;
+			width: 15px;
+			height: 30px;
+			
+			color: #879DA8;
+			z-index: 1;
+			margin-left: 49px;
+			top: -76px;
+			font-size: 30px;
+			opacity: 0;
+			
+
+		}
+		#button1:hover {
+			cursor: pointer;
+
+		}
+		#button2 {
+			position: relative;
+			width: 100px;
+			height: 30px;
+			background-color: white;
+			color: gray;
+			z-index: 2;
+			left: 100px;
+			top: 300px;
+
+		}
+		#button3 {
+			position: relative;
+			width: 100px;
+			height: 30px;
+			background-color: white;
+			color: gray;
+			z-index: 3;
+			left: 220px;
+			top: 100px;
+
+		}
+		#button4 {
+			position: relative;
+			width: 100px;
+			height: 30px;
+			background-color: white;
+			color: gray;
+			z-index: 4;
+			left: 300px;
+			top: 200px;
+
+		}
+		#button:hover {
+			cursor: pointer;
+		}
+		#container1 p {
+			margin: 0px;
+			top: -90px;
+			left: -20px;
+			position: relative;
+			opacity: 0;
+			text-align: center;
+		}
+		@-webkit-keyframes tocak /*--for webkit--*/{
+			0% 	{ -webkit-transform: rotate(0deg);
+					}
+    	
+    		100%{ -webkit-transform: rotate(1460deg);}                       
+
+		}
+		#tocak {
+			z-index: 20;
+			border-radius: 100px;
+			width: 100px;
+			height: 100px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 30px;
+			border:5px dashed #ffbb3f;
+			opacity: 0;
+			position: relative;
+			-webkit-animation: tocak 5s forwards;
+        	animation:tocak 5s;
+        	top:-90;
+        	left: -20;
+        	-webkit-transition:all 0.7s;
+			transition:all 0.7s;
+        
+		}
+		#tocak_poz	{
+			top: -320;
+			left: 437;
+			position: relative;
+			border-radius: 100;
+			z-index: -20;
+			opacity: 0;
+
+		}
+		.tocak {
+			width: 100px;
+			height: 100px;
+			border:5px dashed #ffbb3f;
+			background: #ffbb3f;
+		}
+		#tocak:hover {
+			cursor: pointer;
+			background-color: #ffbb3f;
+		}
+		#tocak:active {
+			background-color: gray;
+		}
+		#static {
+
+			position: relative;
+			opacity:0;
+			color: white;
+		}
+		#drzac {
+			margin-left: auto;
+			margin-right: auto;
+			width: 150px;
+			height: 186px;
+		}
+		@-webkit-keyframes krugrotate{
+
+			0% {
+				-webkit-transform:rotate(0deg);
+				left:-500px;
+				
+
+				 	}
+			20% {
+				
+			}
+			70%	{
+				
+			}
+			100% {-webkit-transform:rotate(360deg);
+				left:552px;
+				
+
+			}
+
+		}
+		@-webkit-keyframes krugr{
+
+			from {
+				-webkit-transform:rotate(0deg);
+				background-color: #49565C;
+
+					}
+		
+			to {-webkit-transform:rotate(360deg);
+				background-color: #49565C;
+				
+			}
+
+		}
+
+
+		#kocka {
+
+			
+			width: 100%;
+			height: 60%;
+			position: absolute;
+			margin-left:auto;
+			margin-right: auto;
+			top: 100px;
+			
+
+		}
+		#krug {
+			
+			
+			top: 240px;
+			position: relative;
+			height: 260px;
+			width: 260px;
+			border-radius: 400px;
+			border:15px dashed #00909a;
+			left: -500px;
+			-webkit-transition:all 2s;
+			-webkit-transition:color 5s;
+			transition:all 2s;
+			display: block;
+			z-index: 5;
+		}
+		#krug1 {
+			left: 639px;
+			width: 36px;
+			height: 36px;
+			top: 306px;
+			background-color: #ffbb3f;
+			position: relative;
+			border-radius: 400px;
+			-webkit-transition: all 2s;
+			-webkit-transition: color 5s;
+			transition: all 2s;
+			display: block;
+			z-index: 5;
+		}
+		#krug:hover {
+			
+			cursor: pointer;
+			color:#00909a;
+		}
+		
+		#hi {
+			margin-top: 110;
+			text-align: center;
+			position: relative;
+			color: #00909a;
+			display: block;
+		}
+		#hi:hover->#krug {
+			background-color: #49565C; 
+		}
+		#prvi, #drugi, #treci, #cetvrti, #peti, #sesti {
+			opacity: 0;
+
+		}
+		#sesti:hover {
+			cursor: pointer;
+		}
+		#linijah {
+			background-color: #00909a;
+			height: 2px;
+			position: absolute;
+			top: 200px;
+			left: 200px;
+			width: 400px;
+			opacity: 0;
+		}
+		#jagoda {
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+			width: 100px;
+			height: 100px;
+			top: -114;
+			color: #00909a;
+			opacity: 0;
+		}
+		#sredina {
+			width: 100%;
+			height: 30%;
+			top: 200px;
+			position: relative;
+
+		}
+		#levo {
+			width: 40%;
+			height: 50%;
+			float: left;
+			
+		}
+		#desno {
+			width: 50%;
+			height: 50%;
+			float: left;
+		}
+
+		#frontend {
+			position: relative;
+			width: 128px;
+			height: 128px;
+			border-radius: 150px;
+			border: 7px dashed 6c3131;
+			background-color: #BF0000;
+			float: left;
+			margin: 0 auto;
+			left: 150px;
+			opacity: 0;
+
+		}
+
+		#backend {
+			position: relative;
+			opacity: 0;
+			width: 128px;
+			height: 128px;
+			border-radius: 150px;
+			border:10px dashed #FF624B;
+			background-color: #0ABF6B;
+			float: left;
+			margin: 0 auto;
+			left: 250px;
+			
+		}
+		@-webkit-keyframes rotor{
+
+			from {-webkit-transform:rotate(0deg);}
+			to {-webkit-transform:rotate(360deg);}
+		}
+		@-webkit-keyframes rotora{
+
+			from {-webkit-transform:rotate(0deg);}
+			to {-webkit-transform:rotate(-720deg);}
+		}
+		#okretalica, #okretalica1, #okretalica2, #okretalica3, #okretalica4	{
+			left: 638px;
+			width: 40px;
+			height: 40px;
+			top: 305px;
+			background-color: none;
+			position: absolute;
+			-webkit-transition: all 2s;
+			-webkit-transition: color 5s;
+			transition: all 2s;
+			display: block;
+			z-index: 5;
+			transition:opacity  2s;
+			
+		}
+		#okretalica	{
+			
+			-webkit-animation: rotor 2.7s infinite linear forwards;
+		}
+		#okretalica1	{
+			
+			-webkit-animation: rotor 3.7s infinite linear forwards;
+		}
+		#okretalica2	{
+			
+			-webkit-animation: rotora 4.2s infinite linear forwards;
+		}
+		#okretalica3	{
+			
+			-webkit-animation: rotora 5.2s infinite linear forwards;
+		}
+		#okretalica4	{
+			
+			-webkit-animation: rotor 5s infinite linear forwards;
+		}
+
+		#javascript, #front1, #php, #mysql, #html{
+			position: relative;
+			left: 135px;
+			width: 13.5px;
+			height: 13.5px;
+			border-radius: 50px;
+			
+			
+		}
+		#javascript {
+			left: 100px;
+			-webkit-animation: rotor 1.5s infinite linear forwards;
+			opacity: 0;
+			background-color: b33127;
+
+		}
+		#front1 {
+		
+			left: 100px;
+			top: -13;
+			-webkit-animation: rotor 3s infinite linear forwards;
+			
+			
+		}
+		#php {
+		
+			left: 165px;
+			top: -30;
+			-webkit-animation: rotor 3s infinite linear forwards;
+			opacity: 0;
+			background-color: #ea1d7e;
+		}
+		#mysql {
+		
+			left: 205px;
+			top: -30;
+			-webkit-animation: rotor 3s infinite linear forwards;
+			opacity: 0;
+			background-color: #ab27b3;
+		}
+		#html {
+			transiton:opacity 2s;
+			left: 317px;
+			top: -30;
+			-webkit-animation: rotor 3s infinite linear forwards;
+			opacity: 0;
+			background-color: yellow;
+		}
+		#css {
+			position: relative;
+			right: 236px;
+			width: 18px;
+			height: 18px;
+			border-radius: 50px;
+			background-color: #41a7a6;
+			-webkit-animation: rotor 1s infinite linear forwards;
+			opacity: 0;
+
+		}
+		#jquery {
+			position: relative;
+			right: 18px;
+			width: 4px;
+			height: 4px;
+			border-radius: 50px;
+			background-color: #2f0a07;
+			opacity: 0;
+			-webkit-animation-timing-function:ease-in;
+
+		}
+
+		@-webkit-keyframes odleti {
+
+			15%{	top:146px; -webkit-animation-timing-function:ease-out; }
+			30%{	top:-34px; -webkit-animation-timing-function:ease-in;-webkit-transform:rotate(16deg);}
+			45%{	top:146px; -webkit-animation-timing-function:ease-out;}
+			60%{	top:66px; -webkit-animation-timing-function:ease-in;}
+			75%{	top:146px; -webkit-animation-timing-function:ease-out;-webkit-transform:rotate(16deg);}
+			90%{	top:116px; -webkit-animation-timing-function:ease-in;}
+			100%{	top:146px; -webkit-animation-timing-function:ease-out;-webkit-transform:rotate(16deg);}
+
+		}
+		#angular {
+			position: relative;
+			right: 36px;
+			width: 4px;
+			height: 4px;
+			border-radius: 50px;
+			background-color: white;
+			opacity: 0;
+		}
+		#bootstrap {
+			position: relative;
+			right: 18px;
+			width: 4px;
+			height: 4px;
+			border-radius: 50px;
+			background-color: lightgreen;
+			opacity: 0;
+			
+
+		}
+		#legenda {
+			color: white;
+			opacity: 0.7;
+			padding-left: 20px;
+			position: absolute;
+		}
+		#legenda p {
+			font-size: 18px;
+		}
+		#legenda h1 {
+			font-size: 26px;
+			margin-top: 70px;
+			background-color: white;
+			color: gray;
+		}
+		#ht:hover {
+			cursor: pointer;
+		}
+		#legenda p:hover {
+			cursor: pointer;
+		}
+		.senkal {
+			border-radius: 100px;
+			width: 100px;
+			height: 100px;
+			z-index: 12;
+			margin-top: 30px;
+			border:5px dashed gray;
+			opacity: 0;
+			position: relative;
+			top:-38px;
+        	left: 0px;
+			-webkit-transition:all 0.7s;
+			transition:all 0.7s;	
+		}
+		.senkad {
+			border-radius: 100px;
+			width: 100px;
+			height: 100px;
+			z-index: 2;
+			margin-top: 30px;
+			border:5px dashed gray;
+			opacity: 0;
+			position: relative;
+			top:-178px;
+        	left: 0px;
+			-webkit-transition:all 0.7s;
+			transition:all 0.7s;	
+		}
+		#senkal:hover {
+			background-color: rgb(114, 77, 106);
+			cursor: pointer; 	
+		}
+
+		#senkad:hover {
+			background-color: rgb(116, 111, 117);
+			cursor: pointer;
+					}
+		@-webkit-keyframes okretlevo {
+
+			36% {	left:0px; -webkit-transform:rotate(0deg);	opacity: 0;}
+			100% {left:-300px;	-webkit-transform:rotate(-180deg);	opacity: 1; border-color:rgb(114, 77, 106);}
+		}
+		@-webkit-keyframes okretdesno {
+
+			60% {	left:0px; -webkit-transform:rotate(0deg);	opacity: 0}
+			100% {left:300px;	-webkit-transform:rotate(180deg);	opacity: 1; border-color:rgb(116, 111, 117);}
+		}
+		#arrow {
+			position: relative;
+			top: -46px;
+			left: 46px;
+			opacity: 0;
+
+		}
+		#naslovi {
+			position: relative;
+			height: 0px;
+			width: 100%;
+			opacity: 1;
+			top:0px;
+			left: 0px;
+			color: white;
+			
+
+		}
+		#about {
+			float: left;
+			position: relative;
+			left: 188px;
+			top: 4px;
+			width: 59;
+			padding: 2px;
+			background-image: url('stardust.png');
+			display: block;
+			opacity: 0;
+			z-index: 29;
+
+			}
+		#about:hover, #skills:hover, #portfolio:hover {
+			cursor: pointer;
+		}
+		#skills {
+			background-image: url('stardust.png');
+			float: left;
+			display: block;
+			left: 430;
+			z-index: 22;
+			top: 4px;
+			width: 58px;
+			position: relative;
+			padding: 2px;
+			opacity: 0;
+		}
+		#portfolio {
+			float: left;
+			background-image: url('stardust.png');
+			position: relative;
+			left: 670;
+			display: block;
+			top: 4;
+			z-index: 19;
+			padding: 2px;
+			opacity: 0;
+			
+			width: 58px;
+		}
+		#senkal {
+			
+		}
+		#senkal_poz {
+			position: relative;
+			opacity: 0;
+			top: -71;
+			left: 137;
+			z-index: -100;
+			background: rgb(114, 77, 106); 
+			border:5px dashed rgb(114, 77, 106);
+
+		}
+		
+	</style>
+	
+	
+
+	<div id="container1">
+		<div id="container4"></div>
+		<p id='naslov'style="font-size:40px; padding-top:250px; color:#ffbb3f; padding-bottom:0px;">VASILIJE MILENKOVIC</p>
+		<p id="text"style="font-size:20px; color:whitesmoke; margin-top:20px; font-family:Mohave;">CURRICULUM VITAE</p>
+			<div id="drzac">	
+				<div id="tocak" onClick="belo()"></div>
+				<div id="static">Loading..</div>
+				<div id="arrow"><img src="arrow-bottom2.gif" alt="strelica" ></div>
+				<div id="senkal" class="senkal"></div>
+				<div id="senkad" class="senkad"></div>
+
+			</div>
+			<div id="naslovi">
+					<div id="about">About ME</div>
+					<div id="skills">My Skills</div>
+					<div id="portfolio">portfolio</div>
+			</div>			
+			<div id="cont_loptica">
+				<div id="lopta1" class="loptica"></div>
+				<div id="lopta2" class="loptica"></div>
+				<div id="lopta3" class="loptica"></div>
+				<div id="lopta4" class="loptica"></div>
+				<div id="lopta5" class="loptica"></div>
+				<div id="lopta6" class="loptica"></div>
+				<div id="lopta7" class="loptica"></div>
+				<div id="lopta8" class="loptica"></div>
+				<div id="lopta9" class="loptica"></div>
+				<div id="lopta10" class="loptica"></div>
+				<div id="lopta11" class="loptica"></div>
+				<div id="lopta12" class="loptica"></div>
+				<div id="lopta13" class="loptica"></div>
+				<div id="lopta14" class="loptica"></div>
+				<div id="lopta15" class="loptica"></div>
+				<div id="lopta16" class="loptica"></div>
+				<div id="lopta17" class="loptica"></div>
+				<div id="lopta18" class="loptica"></div>
+				<div id="lopta19" class="loptica"></div>
+				<div id="lopta20" class="loptica"></div>
+				<div id="lopta21" class="loptica"></div>
+				<div id="lopta22" class="loptica"></div>
+				<div id="lopta23" class="loptica"></div>
+				<div id="lopta24" class="loptica"></div>
+				<div id="lopta25" class="loptica"></div>
+				<div id="lopta26" class="loptica"></div>
+				<div id="lopta27" class="loptica"></div>
+				<div id="lopta28" class="loptica"></div>
+				<div id="lopta29" class="loptica"></div>
+				<div id="lopta30" class="loptica"></div>
+				<div id="lopta31" class="loptica"></div>
+				<div id="lopta32" class="loptica"></div>
+				<div id="lopta33" class="loptica"></div>
+				<div id="lopta34" class="loptica"></div>
+				<div id="lopta35" class="loptica"></div>
+				<div id="lopta36" class="loptica"></div>
+				<div id="lopta37" class="loptica"></div>
+				<div id="lopta38" class="loptica"></div>
+				
+			</div>
+			<div id="pozadina">
+				<div id="senkal_poz" class="senkal"></div>
+				<div id="senkad_poz" class="senkad"></div>
+				<div id="tocak_poz" class="tocak"></div>
+			</div>
+	</div>
+	
+	<div id="container2">
+			<div id="linijah"></div>
+			<div id='kocka'>
+				<div id='krug'>
+					<div id="hi">
+					<p id="prvi">Hello</p>
+					<p id="drugi"> My name is Vasilije, and I'm a web developer</p>
+					<p id="treci"> Take a look around my site, i hope you like it</p>
+					<p id="cetvrti">Just keep folowing the circles </p>
+					<p id="peti">Have fun </p>
+				
+				</div>
+				</div>
+			<p id="jagoda">My skills</p>	
+			</div>
+			<div id="sredina">
+				<div id="levo">
+					<div id="frontend"></div>
+				</div>
+				
+				<div id="desno">
+					<div id="backend"></div>
+				</div>
+			</div>
+
+			
+
+
+	</div>
+		
+
+	</div>
+	
+	<div id="container3">
+		<div id="legenda">
+			<h1>Frontend</h1>
+			<p id="ht">HTML</p>
+			<p id="cs">CSS</p>
+			<p id="bt">Bootstrap</p>
+			<p id="js">Javascript</p>
+			<p id="jq">Jquery</p>
+			<p id="an">Angular.js</p>
+			<h1>Backend</h1>
+			<p id="ph">Php</p>
+			<p id="my">mysql</p>
+		</div>
+		<div id='krug1'>
+		</div>
+		<div id="okretalica">
+			<div id="javascript">
+				<div id="jquery"></div>
+			</div>
+			<div id="front1">
+				<div id="angular"></div>
+			</div>
+		</div>
+		<div id="okretalica1">
+			<div id="css">
+				<div id="bootstrap">
+				</div>
+			</div>
+			
+		</div>
+		<div id="okretalica2">
+			<div id="php"></div>
+		</div>	
+		<div id="okretalica3">
+			<div id="mysql"></div>
+		</div>
+		<div id="okretalica4">
+			<div id="html"></div>
+		</div>
+		
+	</div>
+	<div id="container4"></div>
+	<script>
+			var faza=1;
+			var faz=0;
+			var zonfa=0;
+			function belo(){
+				if(faza==1) {
+					$('#tocak').css({"-webkit-animation": "odleti 2s ease-in forwards"});
+					$('#senkal').css({"-webkit-animation": "okretlevo 0.8s ease-out forwards"});
+					setTimeout(function (){
+						$("#about").animate({opacity:"1"},1000);
+								},600);
+					setTimeout(function (){
+						$("#portfolio").animate({opacity:"1"},1000);
+								},1200);
+					setTimeout(function (){
+						$("#skills").animate({opacity:"1"},1000);
+								},1800);
+
+					$("#arrow").animate({opacity:"0"},200);	
+					$("#tocak").css({"background":"none"},200);
+					$('#senkad').css({"-webkit-animation": "okretdesno    1.4s ease-out forwards"});
+					var n='#lopta';
+					var i=1;
+					setTimeout(function(){
+						var ponavlja=setInterval(function(){
+							if (i>40) {clearInterval(ponavlja)} else {
+								m=n+i;
+								$(m).animate({opacity:"1"},300);
+								i++;
+							}	
+						},30);
+						zonfa=1;
+					},1400);
+					faza=2;
+					
+					$("#cont_loptica").animate({opacity:"1"},100);
+				} else {
+					//ovde ide kod za drugi klik tocka
+				}
+			}
+			function krugovi(){
+				//$("#tok").
+			}
+		
+			$("#tocak").mouseenter(function(){
+				if (faza==1){
+					$("#arrow").animate({opacity:"1"},700);
+					$("#tocak").css({"background":"#ffbb3f"});
+				}else {
+					if (zonfa==1) {
+						$("#tocak").css({"background":"#ffbb3f"});
+						setTimeout(function(){
+							$("#cont_loptica").animate({left:"235px"},200);
+						},100);
+					
+						$("#lopta1").animate({top:"45",left:"261"},500);
+						$("#lopta2").animate({top:"69",left:"245"},500);
+						$("#lopta3").animate({top:"21",left:"229"},500);
+						$("#lopta4").animate({top:"39",left:"265"},500);
+						$("#lopta5").animate({top:"34",left:"273"},500);
+						$("#lopta6").animate({top:"26",left:"265"},500);
+						$("#lopta7").animate({top:"31",left:"273"},500);
+						$("#lopta8").animate({top:"39",left:"268"},500);
+						$("#lopta9").animate({top:"14",left:"212"},500);
+						$("#lopta10").animate({top:"23",left:"257"},500);
+
+						$("#lopta11").animate({top:"10",left:"229"},500);
+						$("#lopta12").animate({top:"3",left:"229"},500);
+						$("#lopta13").animate({top:"8",left:"229"},500);
+						$("#lopta14").animate({top:"-3",left:"217"},500);
+						$("#lopta15").animate({top:"-9",left:"209"},500);
+						$("#lopta16").animate({top:"99",left:"199"},500);
+						$("#lopta17").animate({top:"-11",left:"190"},500);
+						$("#lopta18").animate({top:"-15",left:"192"},500);
+						$("#lopta19").animate({top:"-19",left:"194"},500);
+						$("#lopta20").animate({top:"-13",left:"194"},500);
+
+						$("#lopta21").animate({top:"21",left:"179"},500);
+						$("#lopta22").animate({top:"30",left:"175"},500);
+						$("#lopta23").animate({top:"37",left:"165"},500);
+						$("#lopta24").animate({top:"37",left:"152"},500);
+						$("#lopta25").animate({top:"45",left:"153"},500);
+						$("#lopta26").animate({top:"53",left:"149"},500);
+						$("#lopta27").animate({top:"61",left:"145"},500);
+						$("#lopta28").animate({top:"42",left:"161"},500);
+						$("#lopta29").animate({top:"77",left:"137"},500);
+						$("#lopta30").animate({top:"85",left:"133"},500);
+
+
+						$("#lopta31").animate({top:"92",left:"126"},500);
+						$("#lopta32").animate({top:"100",left:"119"},500);
+						$("#lopta33").animate({top:"14",left:"125"},500);
+						$("#lopta34").animate({top:"92",left:"122"},500);
+						$("#lopta35").animate({top:"-5",left:"123"},500);
+						$("#lopta36").animate({top:"106",left:"124"},500);
+						$("#lopta37").animate({top:"30",left:"93"},500);
+						$("#lopta38").animate({top:"108",left:"92"},500);
+					}
+				}
+			});
+			$("#tocak").mouseout(function(){
+				$("#arrow").animate({opacity:"0"},700);
+				$("#tocak").css({"background":"none"});
+			});
+			$("#about").mouseenter(function(){
+				if (zonfa==1) {
+					$("#cont_loptica").animate({ top:"320px"},300);
+					$("#senkal").css({"background":"rgb(114, 77, 106)"});
+					$("#senkal_poz").css({"opacity":"1"});
+					$("#lopta1").animate({top:"12",left:"235"},500);
+					$("#lopta2").animate({top:"12",left:"247"},500);
+					$("#lopta3").animate({top:"12",left:"235"},500);
+					$("#lopta4").animate({top:"12",left:"214"},500);
+					$("#lopta5").animate({top:"14",left:"202"},500);
+					$("#lopta6").animate({top:"21",left:"191"},500);
+					$("#lopta7").animate({top:"39",left:"185"},500);
+					$("#lopta8").animate({top:"12",left:"232"},500);
+					$("#lopta9").animate({top:"30",left:"177"},500);
+					$("#lopta10").animate({top:"59",left:"176"},500);
+
+					$("#lopta11").animate({top:"65",left:"180"},500);
+					$("#lopta12").animate({top:"50",left:"166"},500);
+					$("#lopta13").animate({top:"66",left:"182"},500);
+					$("#lopta14").animate({top:"67",left:"187"},500);
+					$("#lopta15").animate({top:"75",left:"184"},500);
+					$("#lopta16").animate({top:"83",left:"181"},500);
+					$("#lopta17").animate({top:"77",left:"183"},500);
+					$("#lopta18").animate({top:"71",left:"184"},500);
+					$("#lopta19").animate({top:"66",left:"186"},500);
+					$("#lopta20").animate({top:"65",left:"190"},500);
+
+					$("#lopta21").animate({top:"12",left:"198"},500);
+					$("#lopta22").animate({top:"12",left:"203"},500);
+					$("#lopta23").animate({top:"65",left:"187"},500);
+					$("#lopta24").animate({top:"12",left:"205"},500);
+					$("#lopta25").animate({top:"65",left:"188"},500);
+					$("#lopta26").animate({top:"65",left:"193"},500);
+					$("#lopta27").animate({top:"65",left:"199"},500);
+					$("#lopta28").animate({top:"12",left:"199"},500);
+					$("#lopta29").animate({top:"65",left:"201"},500);
+					$("#lopta30").animate({top:"12",left:"200"},500);
+
+
+					$("#lopta31").animate({top:"14",left:"204"},500);
+					$("#lopta32").animate({top:"20",left:"206"},500);
+					$("#lopta33").animate({top:"28",left:"204"},500);
+					$("#lopta34").animate({top:"37",left:"201"},500);
+					$("#lopta35").animate({top:"62",left:"188"},500);
+					$("#lopta36").animate({top:"55",left:"191"},500);
+					$("#lopta37").animate({top:"47",left:"189"},500);
+					$("#lopta38").animate({top:"12",left:"121"},500);
+
+				}
+
+			});
+			$("#senkal").mouseenter(function(){
+				if (zonfa==1) {
+					$("#cont_loptica").animate({ top:"320px"},300);
+					$("#senkal").css({"background":"rgb(114, 77, 106)"});
+					$("#senkal_poz").css({"opacity":"1"});
+					$("#lopta1").animate({top:"12",left:"235"},500);
+					$("#lopta2").animate({top:"12",left:"247"},500);
+					$("#lopta3").animate({top:"12",left:"235"},500);
+					$("#lopta4").animate({top:"12",left:"214"},500);
+					$("#lopta5").animate({top:"14",left:"202"},500);
+					$("#lopta6").animate({top:"21",left:"191"},500);
+					$("#lopta7").animate({top:"39",left:"185"},500);
+					$("#lopta8").animate({top:"12",left:"232"},500);
+					$("#lopta9").animate({top:"30",left:"177"},500);
+					$("#lopta10").animate({top:"59",left:"176"},500);
+
+					$("#lopta11").animate({top:"65",left:"180"},500);
+					$("#lopta12").animate({top:"50",left:"166"},500);
+					$("#lopta13").animate({top:"66",left:"182"},500);
+					$("#lopta14").animate({top:"67",left:"187"},500);
+					$("#lopta15").animate({top:"75",left:"184"},500);
+					$("#lopta16").animate({top:"83",left:"181"},500);
+					$("#lopta17").animate({top:"77",left:"183"},500);
+					$("#lopta18").animate({top:"71",left:"184"},500);
+					$("#lopta19").animate({top:"66",left:"186"},500);
+					$("#lopta20").animate({top:"65",left:"190"},500);
+
+					$("#lopta21").animate({top:"12",left:"198"},500);
+					$("#lopta22").animate({top:"12",left:"203"},500);
+					$("#lopta23").animate({top:"65",left:"187"},500);
+					$("#lopta24").animate({top:"12",left:"205"},500);
+					$("#lopta25").animate({top:"65",left:"188"},500);
+					$("#lopta26").animate({top:"65",left:"193"},500);
+					$("#lopta27").animate({top:"65",left:"199"},500);
+					$("#lopta28").animate({top:"12",left:"199"},500);
+					$("#lopta29").animate({top:"65",left:"201"},500);
+					$("#lopta30").animate({top:"12",left:"200"},500);
+
+
+					$("#lopta31").animate({top:"14",left:"204"},500);
+					$("#lopta32").animate({top:"20",left:"206"},500);
+					$("#lopta33").animate({top:"28",left:"204"},500);
+					$("#lopta34").animate({top:"37",left:"201"},500);
+					$("#lopta35").animate({top:"62",left:"188"},500);
+					$("#lopta36").animate({top:"55",left:"191"},500);
+					$("#lopta37").animate({top:"47",left:"189"},500);
+					$("#lopta38").animate({top:"12",left:"121"},500);
+					
+				}
+			});
+			$("#about").mouseout(function(){
+				if (faz==0){
+					$("#senkal").css({"background":"none"});
+					$("#senkal_poz").css({"opacity":"0"});
+				};
+			});
+			$("#senkal").mouseout(function(){
+				if (faz==0){
+					$("#senkal").css({"background":"none"});
+					$("#senkal_poz").css({"opacity":"0"});
+				};
+			});
+			$("#skills").mouseenter(function(){
+				if (zonfa==1) {	
+					$("#tocak").css({"background":"#ffbb3f"});
+					$("#cont_loptica").animate({left:"235px"},200);
+				
+					$("#lopta1").animate({top:"45",left:"261"},500);
+					$("#lopta2").animate({top:"69",left:"245"},500);
+					$("#lopta3").animate({top:"21",left:"229"},500);
+					$("#lopta4").animate({top:"39",left:"265"},500);
+					$("#lopta5").animate({top:"34",left:"273"},500);
+					$("#lopta6").animate({top:"26",left:"265"},500);
+					$("#lopta7").animate({top:"31",left:"273"},500);
+					$("#lopta8").animate({top:"39",left:"268"},500);
+					$("#lopta9").animate({top:"14",left:"212"},500);
+					$("#lopta10").animate({top:"23",left:"257"},500);
+
+					$("#lopta11").animate({top:"10",left:"229"},500);
+					$("#lopta12").animate({top:"3",left:"229"},500);
+					$("#lopta13").animate({top:"8",left:"229"},500);
+					$("#lopta14").animate({top:"-3",left:"217"},500);
+					$("#lopta15").animate({top:"-9",left:"209"},500);
+					$("#lopta16").animate({top:"99",left:"199"},500);
+					$("#lopta17").animate({top:"-11",left:"190"},500);
+					$("#lopta18").animate({top:"-15",left:"192"},500);
+					$("#lopta19").animate({top:"-19",left:"194"},500);
+					$("#lopta20").animate({top:"-13",left:"194"},500);
+
+					$("#lopta21").animate({top:"21",left:"179"},500);
+					$("#lopta22").animate({top:"30",left:"175"},500);
+					$("#lopta23").animate({top:"37",left:"165"},500);
+					$("#lopta24").animate({top:"37",left:"152"},500);
+					$("#lopta25").animate({top:"45",left:"153"},500);
+					$("#lopta26").animate({top:"53",left:"149"},500);
+					$("#lopta27").animate({top:"61",left:"145"},500);
+					$("#lopta28").animate({top:"42",left:"161"},500);
+					$("#lopta29").animate({top:"77",left:"137"},500);
+					$("#lopta30").animate({top:"85",left:"133"},500);
+
+
+					$("#lopta31").animate({top:"92",left:"126"},500);
+					$("#lopta32").animate({top:"100",left:"119"},500);
+					$("#lopta33").animate({top:"14",left:"125"},500);
+					$("#lopta34").animate({top:"92",left:"122"},500);
+					$("#lopta35").animate({top:"-5",left:"123"},500);
+					$("#lopta36").animate({top:"106",left:"124"},500);
+					$("#lopta37").animate({top:"30",left:"93"},500);
+					$("#lopta38").animate({top:"108",left:"92"},500);
+				}
+			});
+			$("#skills").mouseout(function(){
+				$("#tocak").css({"background":"none"})
+			});
+			$("#portfolio").mouseenter(function(){
+				if (zonfa==1) {
+					$("#senkad").css({"background":"rgb(116, 111, 117)"});
+					
+					$("#lopta1").animate({top:"6",left:"212"},500);
+					$("#lopta2").animate({top:"6",left:"296"},500);
+					$("#lopta3").animate({top:"66",left:"204"},500);
+					$("#lopta4").animate({top:"66",left:"288"},500);
+					$("#lopta5").animate({top:"66",left:"276"},500);
+					$("#lopta6").animate({top:"66",left:"263"},500);
+					$("#lopta7").animate({top:"66",left:"249"},500);
+					$("#lopta8").animate({top:"66",left:"234"},500);
+					$("#lopta9").animate({top:"56",left:"268"},500);
+					$("#lopta10").animate({top:"66",left:"216"},500);
+
+					$("#lopta11").animate({top:"66",left:"202"},500);
+					$("#lopta12").animate({top:"66",left:"188"},500);
+					$("#lopta13").animate({top:"66",left:"173"},500);
+					$("#lopta14").animate({top:"47",left:"248"},500);
+					$("#lopta15").animate({top:"38",left:"244"},500);
+					$("#lopta16").animate({top:"36",left:"198"},500);
+					$("#lopta17").animate({top:"37",left:"194"},500);
+					$("#lopta18").animate({top:"26",left:"206"},500);
+					$("#lopta19").animate({top:"26",left:"210"},500);
+					$("#lopta20").animate({top:"30",left:"224"},500);
+
+					$("#lopta21").animate({top:"6",left:"212"},500);
+					$("#lopta22").animate({top:"6",left:"200"},500);
+					$("#lopta23").animate({top:"21",left:"212"},500);
+					$("#lopta24").animate({top:"13",left:"208"},500);
+					$("#lopta25").animate({top:"56",left:"116"},500);
+					$("#lopta26").animate({top:"47",left:"112"},500);
+					$("#lopta27").animate({top:"37",left:"108"},500);
+					$("#lopta28").animate({top:"27",left:"104"},500);
+					$("#lopta29").animate({top:"17",left:"100"},500);
+					$("#lopta30").animate({top:"54",left:"142"},500);
+
+
+					$("#lopta31").animate({top:"6",left:"155"},500);
+					$("#lopta32").animate({top:"6",left:"140"},500);
+					$("#lopta33").animate({top:"6",left:"126"},500);
+					$("#lopta34").animate({top:"6",left:"111"},500);
+					$("#lopta35").animate({top:"6",left:"95"},500);
+					$("#lopta36").animate({top:"6",left:"81"},500);
+					$("#lopta37").animate({top:"26",left:"114"},500);
+					$("#lopta38").animate({top:"17",left:"110"},500);
+				}
+
+			});
+			$("#senkad").mouseenter(function(){
+				if (zonfa==1) {
+					$("#senkad").css({"background":"rgb(116, 111, 117)"})
+					
+					$("#lopta1").animate({top:"6",left:"212"},500);
+					$("#lopta2").animate({top:"6",left:"296"},500);
+					$("#lopta3").animate({top:"66",left:"204"},500);
+					$("#lopta4").animate({top:"66",left:"288"},500);
+					$("#lopta5").animate({top:"66",left:"276"},500);
+					$("#lopta6").animate({top:"66",left:"263"},500);
+					$("#lopta7").animate({top:"66",left:"249"},500);
+					$("#lopta8").animate({top:"66",left:"234"},500);
+					$("#lopta9").animate({top:"56",left:"268"},500);
+					$("#lopta10").animate({top:"66",left:"216"},500);
+
+					$("#lopta11").animate({top:"66",left:"202"},500);
+					$("#lopta12").animate({top:"66",left:"188"},500);
+					$("#lopta13").animate({top:"66",left:"173"},500);
+					$("#lopta14").animate({top:"47",left:"248"},500);
+					$("#lopta15").animate({top:"38",left:"244"},500);
+					$("#lopta16").animate({top:"36",left:"198"},500);
+					$("#lopta17").animate({top:"37",left:"194"},500);
+					$("#lopta18").animate({top:"26",left:"206"},500);
+					$("#lopta19").animate({top:"26",left:"210"},500);
+					$("#lopta20").animate({top:"30",left:"224"},500);
+
+					$("#lopta21").animate({top:"6",left:"212"},500);
+					$("#lopta22").animate({top:"6",left:"200"},500);
+					$("#lopta23").animate({top:"21",left:"212"},500);
+					$("#lopta24").animate({top:"13",left:"208"},500);
+					$("#lopta25").animate({top:"56",left:"116"},500);
+					$("#lopta26").animate({top:"47",left:"112"},500);
+					$("#lopta27").animate({top:"37",left:"108"},500);
+					$("#lopta28").animate({top:"27",left:"104"},500);
+					$("#lopta29").animate({top:"17",left:"100"},500);
+					$("#lopta30").animate({top:"54",left:"142"},500);
+
+
+					$("#lopta31").animate({top:"6",left:"155"},500);
+					$("#lopta32").animate({top:"6",left:"140"},500);
+					$("#lopta33").animate({top:"6",left:"126"},500);
+					$("#lopta34").animate({top:"6",left:"111"},500);
+					$("#lopta35").animate({top:"6",left:"95"},500);
+					$("#lopta36").animate({top:"6",left:"81"},500);
+					$("#lopta37").animate({top:"26",left:"114"},500);
+					$("#lopta38").animate({top:"17",left:"110"},500);
+				}
+			});
+			$("#portfolio").mouseout(function(){
+				$("#senkad").css({"background":"none"})
+			});
+
+			$("#senkad").mouseout(function(){
+				$("#senkad").css({"background":"none"})
+			});
+		var senkad=$('#senkad');	
+
+		var faz=0;
+		//============= Ovo je kod za klik na prvi od 3 tocka===================
+		$("#about").click(function(){
+			faz=1;
+			$("#senkal_poz").animate({left:"433", top:"-246", borderRadius:"15", opacity:"0.2", width:"111px", height:"40px"}, 200);
+			var n='#lopta';
+			var i=1;
+			
+			setTimeout(function(){
+				setTimeout(function(){$("#lopta4").css({"background":"rgb(114, 77, 106)"},200)},30);
+				setTimeout(function(){$("#lopta1").css({"background":"rgb(114, 77, 106)"},200)},60);
+				setTimeout(function(){$("#lopta3").css({"background":"rgb(114, 77, 106)"},200)},90);
+				setTimeout(function(){$("#lopta2").css({"background":"rgb(114, 77, 106)"},200)},120);
+				setTimeout(function(){$("#lopta8").css({"background":"rgb(114, 77, 106)"},200)},150);			
+				setTimeout(function(){$("#lopta38").css({"background":"rgb(114, 77, 106)"},200)},180);
+				setTimeout(function(){$("#lopta21").css({"background":"rgb(114, 77, 106)"},200)},210);
+				setTimeout(function(){$("#lopta22").css({"background":"rgb(114, 77, 106)"},200)},240);
+				setTimeout(function(){$("#lopta24").css({"background":"rgb(114, 77, 106)"},200)},270);
+				setTimeout(function(){$("#lopta28").css({"background":"rgb(114, 77, 106)"},200)},300);
+				setTimeout(function(){$("#lopta30").css({"background":"rgb(114, 77, 106)"},200)},330);			
+				setTimeout(function(){$("#lopta31").css({"background":"rgb(114, 77, 106)"},200)},360);
+				setTimeout(function(){$("#lopta32").css({"background":"rgb(114, 77, 106)"},200)},390);
+				setTimeout(function(){$("#lopta33").css({"background":"rgb(114, 77, 106)"},200)},420);
+				setTimeout(function(){$("#lopta34").css({"background":"rgb(114, 77, 106)"},200)},450);
+				setTimeout(function(){$("#lopta37").css({"background":"rgb(114, 77, 106)"},200)},480);
+				setTimeout(function(){$("#lopta36").css({"background":"rgb(114, 77, 106)"},200)},510);			
+				setTimeout(function(){$("#lopta35").css({"background":"rgb(114, 77, 106)"},200)},540);
+				setTimeout(function(){$("#lopta29").css({"background":"rgb(114, 77, 106)"},200)},570);
+				setTimeout(function(){$("#lopta27").css({"background":"rgb(114, 77, 106)"},200)},600);
+				setTimeout(function(){$("#lopta26").css({"background":"rgb(114, 77, 106)"},200)},630);
+				setTimeout(function(){$("#lopta25").css({"background":"rgb(114, 77, 106)"},200)},660);
+				setTimeout(function(){$("#lopta23").css({"background":"rgb(114, 77, 106)"},200)},690);			
+				setTimeout(function(){$("#lopta20").css({"background":"rgb(114, 77, 106)"},200)},720);
+				setTimeout(function(){$("#lopta19").css({"background":"rgb(114, 77, 106)"},200)},750);
+				setTimeout(function(){$("#lopta18").css({"background":"rgb(114, 77, 106)"},200)},780);
+				setTimeout(function(){$("#lopta17").css({"background":"rgb(114, 77, 106)"},200)},810);
+				setTimeout(function(){$("#lopta16").css({"background":"rgb(114, 77, 106)"},200)},840);
+				setTimeout(function(){$("#lopta15").css({"background":"rgb(114, 77, 106)"},200)},870);			
+				setTimeout(function(){$("#lopta14").css({"background":"rgb(114, 77, 106)"},200)},900);
+				setTimeout(function(){$("#lopta13").css({"background":"rgb(114, 77, 106)"},200)},930);
+				setTimeout(function(){$("#lopta11").css({"background":"rgb(114, 77, 106)"},200)},960);
+				setTimeout(function(){$("#lopta10").css({"background":"rgb(114, 77, 106)"},200)},990);
+				setTimeout(function(){$("#lopta12").css({"background":"rgb(114, 77, 106)"},200)},1020);
+				setTimeout(function(){$("#lopta7").css({"background":"rgb(114, 77, 106)"},200)},1050);			
+				setTimeout(function(){$("#lopta9").css({"background":"rgb(114, 77, 106)"},200)},1080);
+				setTimeout(function(){$("#lopta6").css({"background":"rgb(114, 77, 106)"},200)},1110);
+				setTimeout(function(){$("#lopta5").css({"background":"rgb(114, 77, 106)"},200)},1110);
+				/*setInterval(function(){
+								m=n+i;
+								$(m).css({"background":"rgb(114, 77, 106)"},200);
+								i++;
+				},30);*/
+			},800);
+			setTimeout(function(){
+				
+				$("#senkal_poz").animate({left:"12", top:"-570", borderRadius:"15", opacity:"0.2", width:"991px", height:"618px"}, 200);
+				$("#senkal_poz").css({"zIndex":"100"});
+				$("#senkal_poz").animate({opacity:"0.9"}, 50);
+				 setTimeout(function(){
+					$("#container4").animate({width:"100%"},50);
+				},1200);
+				
+				$("#senkal_poz").html("<p id='tekst'>Hello my name is Vasilije</p>");
+			},1860,function(){
+
+			});
+
+			
+		});	
+		//============= Ovo je kod za klik na drugi od 3 tocka===================
+		$("#skills").click(function(){
+			$("#tocak_poz").css({"opacity":"1"});
+			$("#tocak_poz").animate({left:"475", top:"-495", borderRadius:"15", opacity:"0.2", width:"10px", height:"11px"}, 500);
+			//=========== ovo dole sve moras da spustis za 20px, sve sem 
+			setTimeout(function(){
+				setTimeout(function(){$("#lopta4").animate({top:"30", left:"254"},200).css({"background":"#ffbb3f"})},30);
+				setTimeout(function(){$("#lopta6").animate({top:"21", left:"246"},200).css({"background":"#ffbb3f"})},60);
+				setTimeout(function(){$("#lopta16").animate({top:"7", left:"184"},200).css({"background":"#ffbb3f"})},90);
+				setTimeout(function(){$("#lopta17").animate({top:"7", left:"189"},200).css({"background":"#ffbb3f"})},120);
+				setTimeout(function(){$("#lopta8").animate({top:"22", left:"203"},200).css({"background":"#ffbb3f"})},150);			
+				setTimeout(function(){$("#lopta32").animate({top:"30", left:"107"},200).css({"background":"#ffbb3f"})},180);
+				setTimeout(function(){$("#lopta25").animate({top:"45", left:"148"},200).css({"background":"#ffbb3f"})},210);
+				setTimeout(function(){$("#lopta26").animate({top:"45", left:"153"},200).css({"background":"#ffbb3f"})},240);
+				setTimeout(function(){$("#lopta18").animate({top:"13", left:"192"},200).css({"background":"#ffbb3f"})},270);
+				setTimeout(function(){$("#lopta15").animate({top:"14", left:"181"},200).css({"background":"#ffbb3f"})},300);
+				setTimeout(function(){$("#lopta31").animate({top:"37", left:"117"},200).css({"background":"#ffbb3f"})},330);			
+				setTimeout(function(){$("#lopta1").animate({top:"37", left:"260"},200).css({"background":"#ffbb3f"})},360);
+				setTimeout(function(){$("#lopta19").animate({top:"1", left:"172"},200).css({"background":"#ffbb3f"})},390);
+				setTimeout(function(){$("#lopta20").animate({top:"1", left:"177"},200).css({"background":"#ffbb3f"})},420);
+				setTimeout(function(){$("#lopta10").animate({top:"21", left:"236"},200).css({"background":"#ffbb3f"})},450);
+				setTimeout(function(){$("#lopta5").animate({top:"30", left:"256"},200).css({"background":"#ffbb3f"})},480);
+				setTimeout(function(){$("#lopta36").animate({top:"22", left:"84"},200).css({"background":"#ffbb3f"})},510);			
+				setTimeout(function(){$("#lopta28").animate({top:"30", left:"116"},200).css({"background":"#ffbb3f"})},540);
+				setTimeout(function(){$("#lopta27").animate({top:"51", left:"140"},200).css({"background":"#ffbb3f"})},570);
+				setTimeout(function(){$("#lopta29").animate({top:"51", left:"141"},200).css({"background":"#ffbb3f"})},600);
+				setTimeout(function(){$("#lopta11").animate({top:"7", left:"222"},200).css({"background":"#ffbb3f"})},630);
+				setTimeout(function(){$("#lopta14").animate({top:"13", left:"215"},200).css({"background":"#ffbb3f"})},660);
+				setTimeout(function(){$("#lopta38").animate({top:"37", left:"120"},200).css({"background":"#ffbb3f"})},690);			
+				setTimeout(function(){$("#lopta2").animate({top:"44", left:"230"},200).css({"background":"#ffbb3f"})},720);
+				setTimeout(function(){$("#lopta30").animate({top:"45", left:"147"},200).css({"background":"#ffbb3f"})},750);
+				setTimeout(function(){$("#lopta34").animate({top:"37", left:"96"},200).css({"background":"#ffbb3f"})},780);
+				setTimeout(function(){$("#lopta12").animate({top:"7", left:"191"},200).css({"background":"#ffbb3f"})},810);
+				setTimeout(function(){$("#lopta13").animate({top:"14", left:"180"},200).css({"background":"#ffbb3f"})},840);
+				setTimeout(function(){$("#lopta7").animate({top:"26", left:"224"},200).css({"background":"#ffbb3f"})},870);			
+				setTimeout(function(){$("#lopta35").animate({top:"2", left:"284"},800).css({"background":"#ffbb3f"})},970);
+				
+				
+			
+				
+			},300);
+		
+	
+
+
+		});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		//============= Ovo je kod za klik na treci od 3 tocka===================
+
+		
+
+		$(document).ready(function(){
+
+			
+
+			$("#tocak").click(function(){
+				
+
+
+			});
+
+			$("#krug").click(function(){
+				$("#krug").css({"left":"290"});
+				$("#hi").animate({opacity:"0"},100);
+				$("#krug").animate({width:"100px", height:"100px", borderWidth:"7px" , top:"140px", left:"418px"},400);
+				$("#krug").delay(500).css({"-webkit-animation": "krugr 3s infinite forwards"});
+				$("#jagoda").delay(2000).animate({opacity:"1"});
+				$("#container3").animate({width:"100%"});
+				$("#container3").delay(2000).animate({opacity:"1"},4000);
+
+
+			});
+			$("#button3").click(function(){
+				$("#container4").animate({width:"100%"},1000);
+
+			});
+			$("#tocak").animate({opacity:"1"},700);
+			$("#static").animate({opacity:"1"},2000);
+			$("#static").animate({opacity:"0"},2000);
+		});
+		$(document).ready(function(){
+			setTimeout(function(){
+				$("#naslov").animate({opacity:"1"},1000, function(){
+					$("#text").animate({opacity:"1"},1000,function(){$("#button1").animate({opacity:"1"},1000);
+					});
+				});
+				
+				
+			},4000);
+		
+			$('#ht').click(function() {
+				if ($('#html').css("opacity")==0){
+					$('#html').animate({opacity:"1"},1000);
+
+				} else {
+					$('#html').animate({opacity:"0"},1000);
+				}
+			});
+			$('#cs').click(function() {
+				if ($('#css').css("opacity")==0){
+					$('#css').animate({opacity:"1"},1000);
+
+				} else {
+					$('#css').animate({opacity:"0"},1000);
+				}
+			});
+			$('#js').click(function() {
+				if ($('#javascript').css("opacity")==0){
+					$('#javascript').animate({opacity:"1"},1000);
+
+				} else {
+					$('#javascript').animate({opacity:"0"},1000);
+				}
+			});
+			$('#ph').click(function() {
+				if ($('#php').css("opacity")==0){
+					$('#php').animate({opacity:"1"},1000);
+
+				} else {
+					$('#php').animate({opacity:"0"},1000);
+				}
+			});
+			$('#bt').click(function() {
+				if ($('#bootstrap').css("opacity")==0){
+					$('#bootstrap').animate({opacity:"1"},1000);
+
+				} else {
+					$('#bootstrap').animate({opacity:"0"},1000);
+				}
+			});
+			$('#jq').click(function() {
+				if ($('#jquery').css("opacity")==0){
+					$('#jquery').animate({opacity:"1"},1000);
+
+				} else {
+					$('#jquery').animate({opacity:"0"},1000);
+				}
+			});
+			$('#my').click(function() {
+				if ($('#mysql').css("opacity")==0){
+					$('#mysql').animate({opacity:"1"},1000);
+
+				} else {
+					$('#mysql').animate({opacity:"0"},1000);
+				}
+			});
+			$('#an').click(function() {
+				if ($('#angular').css("opacity")==0){
+					$('#angular').animate({opacity:"1"},1000);
+
+				} else {
+					$('#angular').animate({opacity:"0"},1000);
+				}
+			});
+
+
+		});
+
+		
+
+	</script>
+</body>
+</html>

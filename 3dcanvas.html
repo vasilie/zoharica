@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Moja kocka</title>
+
+</head>
+<style type="text/css">
+	#camera {
+		width: 300px;
+		height: 200px;
+		
+
+		margin-left: 20px;
+		margin-top: 100px;
+		position: absolute;
+		-webkit-perspective:200px;
+
+
+		
+	}
+
+	#strana1 {
+		margin: 0 auto;
+		width: 100px;
+		height: 100px;
+		color: black;
+		-webkit-transform: rotateX(90deg) translatez(50px);
+		background: yellow;
+		position: absolute;
+		opacity: 0.6;
+	}
+	#strana2 {
+		margin: 0 auto;
+		width: 100px;
+		height: 100px;
+		color: black;
+		-webkit-transform: translatez(-50px) rotatey(180deg);
+		background: red;
+		position: absolute;
+		opacity: 0.6;
+
+	}
+	#strana3 {
+		margin: 0 auto;
+		width: 100px;
+		height: 100px;
+		color: black;
+		-webkit-transform: rotatey(90deg) translatez(-50px) rotatey(180deg);
+		background: green;
+		position: absolute;
+		opacity: 0.6;
+
+	}
+	#strana1:hover,#strana2:hover,#strana3:hover,#strana4:hover,#strana5:hover,#strana6:hover {
+		background: black;
+		cursor:pointer;
+	}
+
+	#strana4 {
+		margin: 0 auto;
+		width: 100px;
+		height: 100px;
+		color: black;
+		-webkit-transform: rotatey(90deg) translatez(50px);
+		background: orange;
+		position: absolute;
+		opacity: 0.6;
+
+	}
+	#strana5 {
+		margin: 0 auto;
+		width: 100px;
+		height: 100px;
+		color: black;
+		-webkit-transform: rotatex(-90deg) translatez(50px);
+		background: gray;
+		position: absolute;
+		opacity: 0.6;
+
+	}
+	#strana6 {
+		margin: 0 auto;
+		width: 100px;
+		height: 100px;
+		color: black;
+		-webkit-transform:  translatez(50px);
+		background: pink;
+		position: absolute;
+		opacity: 0.6;
+
+	}
+	
+
+	#kocka {
+		position: relative;
+		-webkit-transform-style: preserve-3d;
+		padding-left: 100px;
+		width: 200px;
+		height: 100px;
+		-webkit-transition:all 1s;
+		-webkit-transform:rotatex(-38deg) rotatey(-38deg);
+	}
+	.kont {
+		background: gray;
+		color: white;
+		width: 39px;
+		height: 26px;
+		position: relative;
+		padding-left: 11px;
+		padding-top: 5px;
+
+	}
+	.kont:hover {
+		cursor: pointer;
+		color: black;
+	}
+	#kontrole {
+		margin-top:300px;
+		position: absolute;
+		left: 150px;
+	}
+	#levo {
+		top: -64px;
+		left: -53px;
+		position: relative;
+	
+	}
+	#dole {
+		top: -16px;
+		position: relative;
+	}
+	#gore {
+		top:-20px;
+	}
+	#desno {
+		top: -94px;
+		left: 53px;
+		padding-left: 4px;
+		width: 43px;
+	}
+</style>
+
+<body>
+	<div id="camera">
+		<div id="kocka">
+			<div id="strana1">
+				<p>Sesta nema komentar</p>
+			</div>
+			<div id="strana2">
+				<p>Treca strana se slaze da je Esteban smrad</p>
+			</div>
+			<div id="strana3">
+				<p style="margin-top:0px">Cetvrta strana misli da ima jos nade za Estebana, ali da je ipak smrad</p>
+			</div>
+			<div id="strana4">
+				<p style="padding-top:0px">Ovo je druga strana kocke koja kaze da je Esteban smrad</p>
+			</div>
+			<div id="strana5">
+				<p>Peta misli da je Dzoni smrad</p>
+			</div>
+			<div id="strana6">
+				<p>Esteban je smrad</p>
+			</div>
+		</div>
+	</div>
+	<div id="kontrole">
+		<div id="gore" class="kont" onclick="gore()">Gore</div>
+		<div id="dole" class="kont" onclick="dole()">Dole</div>
+		<div id="levo" class="kont" onclick="levo()">Levo</div>
+		<div id="desno" class="kont" onclick="desno()">Desno</div>
+	</div>
+	<script type="text/javascript">
+		var y=-38;
+		var x=-38;
+		
+		function gore () {
+			x=x+30;
+			document.getElementById("kocka").style.webkitTransform="rotateX("+x+"deg) rotatey("+y+"deg)";
+			
+		}
+		function dole () {
+			x=x-30;
+			document.getElementById("kocka").style.webkitTransform="rotateX("+x+"deg) rotatey("+y+"deg)";
+			
+		}
+		function levo () {
+			y=y-30;
+			document.getElementById("kocka").style.webkitTransform="rotateX("+x+"deg) rotatey("+y+"deg)";
+			
+		}
+		function desno () {
+			y=y+30;
+			document.getElementById("kocka").style.webkitTransform="rotateX("+x+"deg) rotatey("+y+"deg)";
+			
+		}
+
+	</script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kockica</title>
+<script type="text/javascript">
+
+	var kocka = document.getElementById("kocka");
+	
+	function prvi() {
+		var kocka = document.getElementById("kocka");
+		kocka.style.webkitTransform="rotatex(-40deg) rotatey(0deg)";
+
+	}
+	function drugi() {
+		var kocka = document.getElementById("kocka");
+		kocka.style.webkitTransform="rotatex(-40deg) rotatey(-42deg)";
+	}
+	function treci() {
+		var kocka = document.getElementById("kocka");
+		kocka.style.webkitTransform="rotatex(-40deg) rotatey(-103deg)";
+	}
+	function cetvrti() {
+		var kocka = document.getElementById("kocka");
+		var strana1 = document.getElementById("strana1");
+		var strana2 = document.getElementById("strana2");
+		var strana3 = document.getElementById("strana3");
+		var strana4 = document.getElementById("strana4");
+		var strana5 = document.getElementById("strana5");
+		var strana6 = document.getElementById("strana6");
+		kocka.style.webkitTransform="rotatex(-40deg) rotatey(-210deg)";
+		
+		
+	}
+	function cka() {
+		strana1.style.webkitTransform="translatez(100px)translateX(20px)translateY(20px)";
+		strana2.style.webkitTransform="translatez(-100px)translateX(20px)translateY(20px)";
+		strana3.style.webkitTransform="translatex(120px)translatey(20px) rotateY(90deg)";
+		strana4.style.webkitTransform="translatex(-80px)translatey(20px) rotateY(90deg)";
+		strana5.style.webkitTransform="translatey(120px) translatex(20px)rotatex(90deg)";
+		strana6.style.webkitTransform="translatey(-80px) translatex(20px)rotatex(90deg)";
+		strana1.style.opacity="0.7";
+		strana1.style.background="black";
+		strana2.style.opacity="0.7";
+		strana2.style.background="black";
+		strana3.style.opacity="0.7";
+		strana3.style.background="black";
+		strana4.style.opacity="0.7";
+		strana4.style.background="black";
+		strana5.style.opacity="0.7";
+		strana5.style.background="black";
+		strana6.style.opacity="0.7";
+		strana6.style.background="black";
+	}
+	function ucka() {
+		strana1.style.webkitTransform="translatez(80px)translateX(20px)translateY(20px)";
+		strana2.style.webkitTransform="translatez(-80px)translateX(20px)translateY(20px)";
+		strana3.style.webkitTransform="translatex(100px)translatey(20px) rotateY(90deg)";
+		strana4.style.webkitTransform="translatex(-60px)translatey(20px) rotateY(90deg)";
+		strana5.style.webkitTransform="translatey(100px) translatex(20px)rotatex(90deg)";
+		strana6.style.webkitTransform="translatey(-60px) translatex(20px)rotatex(90deg)";
+		strana1.style.opacity="0.3";
+		strana1.style.background="#00FFBC";
+		strana2.style.opacity="0.3";
+		strana2.style.background="#00FFBC";
+		strana3.style.opacity="0.3";
+		strana3.style.background="#00FFBC";
+		strana4.style.opacity="0.3";
+		strana4.style.background="#00FFBC";
+		strana5.style.opacity="0.3";
+		strana5.style.background="#00FFBC";
+		strana6.style.opacity="0.3";
+		strana6.style.background="#00FFBC";
+	}
+
+	function rocka(){
+		strana1.style.webkitTransform="translateZ(80px) translateX(250px) translateY(20px)";
+		strana2.style.webkitTransform="translateZ(-80px) translateX(250px) translateY(20px)";
+		strana3.style.webkitTransform="translateX(330px) translateY(20px) rotateY(90deg)";
+		strana4.style.webkitTransform="translateX(171px) translateY(20px) rotateY(90deg)";
+		strana5.style.webkitTransform="translateY(100px) translateX(250px) rotateX(90deg)";
+		strana6.style.webkitTransform="translateY(-60px) translateX(250px) rotateX(90deg)";
+		strana1.style.webkitTimingFunction="linear";
+		setTimeout(function(){
+			strana1.style.webkitTransform="translateZ(80px) translateX(250px) translateY(320px)";
+			strana2.style.webkitTransform="translateZ(-80px) translateX(250px) translateY(320px)";
+			strana3.style.webkitTransform="translateX(330px) translateY(320px) rotateY(90deg)";
+			strana4.style.webkitTransform="translateX(171px) translateY(320px) rotateY(90deg)";
+			strana5.style.webkitTransform="translateY(400px) translateX(250px) rotateX(90deg)";
+			strana6.style.webkitTransform="translateY(240px) translateX(250px) rotateX(90deg)";
+		},1200)
+		setTimeout(function(){
+			strana1.style.webkitTransform="translateZ(80px) translateX(20px) translateY(320px)";
+			strana2.style.webkitTransform="translateZ(-80px) translateX(20px) translateY(320px)";
+			strana3.style.webkitTransform="translateX(100px) translateY(320px) rotateY(90deg)";
+			strana4.style.webkitTransform="translateX(-59px) translateY(320px) rotateY(90deg)";
+			strana5.style.webkitTransform="translateY(400px) translateX(20px) rotateX(90deg)";
+			strana6.style.webkitTransform="translateY(240px) translateX(20px) rotateX(90deg)";
+		},2400)
+		setTimeout(function(){
+			strana1.style.webkitTransform="translatez(80px)translateX(20px)translateY(20px)";
+			strana2.style.webkitTransform="translatez(-80px)translateX(20px)translateY(20px)";
+			strana3.style.webkitTransform="translatex(100px)translatey(20px) rotateY(90deg)";
+			strana4.style.webkitTransform="translatex(-60px)translatey(20px) rotateY(90deg)";
+			strana5.style.webkitTransform="translatey(100px) translatex(20px)rotatex(90deg)";
+			strana6.style.webkitTransform="translatey(-60px) translatex(20px)rotatex(90deg)";
+		},3900)
+
+	}
+		var x=-38;
+		var y=-38;
+		function levo(){
+			var kocka = document.getElementById("kocka");
+			
+			y=y+45;
+			kocka.style.webkitTransform="rotatex("+x+"deg) rotatey("+y+"deg)";
+			console.log(y);
+			console.log(x);
+
+		}
+		function desno(){
+			var kocka = document.getElementById("kocka");
+			 y=y-45;
+			kocka.style.webkitTransform="rotatex("+x+"deg)rotatey("+y+"deg)";
+			console.log(y);
+			console.log(x);
+
+		}
+		function gore(){
+			var kocka = document.getElementById("kocka");
+			 x=x+45;
+			kocka.style.webkitTransform=" rotatex("+x+"deg) rotatey("+y+"deg)";
+			console.log(y);
+			console.log(x);
+
+		}
+		function dole(){
+			var kocka = document.getElementById("kocka");
+			 x=x-45;
+			kocka.style.webkitTransform=" rotatex("+x+"deg) rotatey("+y+"deg)";
+			console.log(y);
+			console.log(x);
+
+		}
+
+
+
+</script>
+<style type="text/css">
+
+	#prostor {
+		margin-top: 100px;
+		width: 100%;
+		height:50%;
+		position: absolute;
+		-webkit-perspective:500px;
+
+	}
+
+	#kocka {
+		width: 200px;
+		height: 200px;
+		position: relative;
+		-webkit-transform-style:preserve-3d;
+		-webkit-transition:all 1.7s;
+		margin: 0 auto;
+		margin-top: 100px;
+		-webkit-transform:rotatex(-38deg) rotatey(-38deg);
+	}
+	#malacka {
+		width: 100%;
+		height:100%;
+		position: absolute;
+	}
+	.vert {
+		height: 198px;
+		width: 18px;
+		background: #CC4250;
+		position: absolute;
+		margin: 0 auto;
+		border: 1px solid black;
+		z-index: 20;
+
+
+
+	}
+
+	.hor {
+		height: 18px;
+		width: 198px;
+		background: #997E80;
+		position:absolute;
+		margin: 0 auto;
+		border: 1px solid black;
+		z-index: 0;
+
+	}
+	.kont {
+		background: rgb(0, 97, 128);
+		width: 100px;
+		height: 20px;
+		color: white;
+		text-align: center;
+	}
+	.kont:hover {
+		background: pink;
+		cursor: pointer;
+	}
+	#kontrole {
+		position: absolute;
+			top: 50px;
+			left: 50px;
+	}
+
+	.stran {
+		width: 160px;
+		height: 160px;
+		position: absolute;
+		background: #42CCAF;
+		z-index: 999;
+		-webkit-transition:all 2s;
+		opacity: 0.4;
+	}
+
+	#strana1 {
+		-webkit-transform:translatez(80px)translateX(20px)translateY(20px);
+	}
+	#strana2 {
+		-webkit-transform:translatez(-80px)translateX(20px)translateY(20px);
+	}
+	#strana3 {
+		-webkit-transform:translatex(100px)translatey(20px) rotateY(90deg);
+	}
+	#strana4 {
+		-webkit-transform:translatex(-60px)translatey(20px) rotateY(90deg);
+	}
+	#strana5 {
+		-webkit-transform:translatey(100px) translatex(20px)rotatex(90deg);
+	}
+	#strana6 {
+		-webkit-transform:translatey(-60px) translatex(20px)rotatex(90deg);
+	}
+
+	#ap1 {
+		-webkit-transform:translatez(100px);
+	}
+	#ap2 {
+		-webkit-transform:translatez(90px)translatex(-10px)rotateY(90deg);
+	}
+	#ap3 {
+		-webkit-transform:translatez(90px)translatex(10px)rotateY(-90deg);
+		height: 178px;
+	}
+	#ap4 {
+		-webkit-transform:translatez(80px);
+	}
+
+
+	#ad1 {
+		-webkit-transform: translatez(100px)translateX(19px);
+		width: 160px;
+	}
+	#ad2 {
+		-webkit-transform:translatez(90px)translatex(19px)translatey(-10px)rotatex(90deg);
+		width: 160px;
+	}
+	#ad3 {
+		-webkit-transform: translatez(80px)translateX(20px);
+		width: 160px;
+	}
+	#ad4 {
+		-webkit-transform:translatez(90px)translatey(10px)rotatex(90deg);
+	}
+
+	
+	#at1 {
+		-webkit-transform:translatez(100px)translatex(180px);
+	}
+	#at2 {
+		-webkit-transform:translatez(90px)translatex(190px)rotatey(90deg);
+	}
+	#at3 {
+		-webkit-transform:translatez(80px)translatex(180px);
+	}
+	#at4 {
+		-webkit-transform:translatez(90px)translatex(170px)rotatey(-90deg);
+		height: 178px;
+	}
+
+	#ac1 { 
+		-webkit-transform:translatez(100px)translatey(180px);
+	}
+	#ac2 { 
+		-webkit-transform:translatez(90px)translatey(170px)rotatex(90deg);
+	}
+	#ac3 { 
+		-webkit-transform:translatez(80px)translatey(180px);
+	}
+	#ac4 { 
+		-webkit-transform:translatez(90px)translatey(190px)rotatex(90deg);
+	}
+
+
+	#bp1 {
+		-webkit-transform:translatex(-90px)translatey(-10px)rotatey(90deg)rotatex(90deg);
+	}
+	#bp2 {
+		-webkit-transform:translatex(-80px)rotatey(90deg);
+	}
+	#bp3 {
+		-webkit-transform:translatex(-90px)translatey(10px)rotatey(90deg)rotatex(90deg);
+	}
+	#bp4 {
+		-webkit-transform:translatex(-100px)rotatey(90deg);
+	}
+
+	#bd1 {
+		-webkit-transform:translatex(90px)translatey(-10px)rotatey(90deg)rotatex(90deg);
+	}
+	#bd2 {
+		-webkit-transform:translatex(100px)rotatey(90deg);
+	}
+	#bd3 {
+		-webkit-transform:translatex(90px)translatey(10px)rotatey(90deg)rotatex(90deg);
+	}
+	#bd4 {
+		-webkit-transform: translatex(100px)rotatey(90deg);
+		width: 160px;
+	}
+
+	#bt1 {
+		-webkit-transform:translatex(110px)translatey(170px)rotatey(90deg)rotatex(90deg);
+		width: 158px;
+	}
+	#bt2 {
+		-webkit-transform:translatex(100px)translatey(180px)rotatey(90deg);
+	}
+	#bt3 {
+		-webkit-transform:translatex(90px)translatey(190px)rotatey(90deg)rotatex(90deg);
+	}
+	#bt4 {
+		-webkit-transform:translatex(80px)translatey(180px)rotatey(90deg);
+	}
+
+	#bc1 {
+		-webkit-transform:translatex(-90px)translatey(170px)rotatey(90deg)rotatex(90deg);
+	}
+	#bc2 {
+		-webkit-transform:translatex(-80px)translatey(180px)rotatey(90deg);
+	}
+	#bc3 {
+		-webkit-transform:translatex(-90px)translatey(190px)rotatey(90deg)rotatex(90deg);
+	}
+	#bc4 {
+		-webkit-transform:translatex(-100px)translatey(180px)rotatey(90deg);
+	}
+
+
+	#gp1 {
+		-webkit-transform:translatez(-80px);
+	}
+	#gp2 {
+		-webkit-transform:translatez(-90px)translatex(-10px)rotateY(90deg);
+	}
+	#gp3 {
+		-webkit-transform:translatez(-90px)translatex(10px)rotateY(-90deg);
+		height: 178px;
+	}
+	#gp4 {
+		-webkit-transform:translatez(-100px);
+	}
+
+
+	#gd1 {
+		-webkit-transform: translatez(-80px)translateX(20px);
+		width: 160px;
+	}
+	#gd2 {
+		-webkit-transform:translatez(-90px)translatey(-10px)rotatex(90deg);
+	}
+	#gd3 {
+		-webkit-transform:translatez(-100px);
+	}
+	#gd4 {
+		-webkit-transform:translatez(-90px)translatey(10px)rotatex(90deg);
+	}
+
+	
+	#gt1 {
+		-webkit-transform:translatez(-80px)translatex(180px);
+	}
+	#gt2 {
+		-webkit-transform:translatez(-90px)translatex(190px)rotatey(90deg);
+	}
+	#gt3 {
+		-webkit-transform:translatez(-100px)translatex(180px);
+	}
+	#gt4 {
+		-webkit-transform:translatez(-90px)translatex(170px)rotatey(-90deg);
+		height: 178px;
+	}
+
+	#gc1 { 
+		-webkit-transform:translatez(-80px)translatey(180px);
+	}
+	#gc2 { 
+		-webkit-transform:translatez(-90px)translatey(170px)rotatex(90deg);
+	}
+	#gc3 { 
+		-webkit-transform:translatez(-100px)translatey(180px);
+	}
+	#gc4 { 
+		-webkit-transform:translatez(-90px)translatey(190px)rotatex(90deg);
+	}
+	#levo {
+		position: absolute;
+		-webkit-transform:rotate(180deg);
+		left: 230px;
+		top: 294px;
+		opacity: 0.2;
+		-webkit-transition:all 0.5s;
+	}
+	#desno {
+		position: absolute;
+		left: 736px;
+		top: 294px;
+		opacity: 0.2;
+		-webkit-transition:all 0.5s;
+		
+	}
+	#gore {
+		position: absolute;
+		-webkit-transform:rotate(-90deg);
+		left: 490px;
+		top: 68px;
+		opacity: 0.2;
+		-webkit-transition:all 0.5s;
+	}
+	#dole {
+		position: absolute;
+		-webkit-transform:rotate(90deg);
+		left: 490px;
+		top: 500px;
+		opacity: 0.2;
+		-webkit-transition:all 0.5s;
+	}
+	#levo:hover, #desno:hover, #gore:hover, #dole:hover {
+		opacity:1;
+		cursor: pointer;
+	}
+
+
+</style>
+
+
+
+</head>
+<body>
+
+
+	<div id="prostor">
+
+		<div id="kocka">
+		
+
+		<!--- Ovo je Alpha   ======== -->
+		
+			<div id="ap1" class="vert"></div>
+			<div id="ap2" class="vert"></div>
+			<div id="ap3" class="vert"></div>
+			<div id="ap4" class="vert"></div>
+			
+			<div id="ad1" class="hor"></div>
+			<div id="ad2" class="hor"></div>
+			<div id="ad3" class="hor"></div>
+			<div id="ad4" class="hor"></div>
+
+			<div id="at1" class="vert"></div>
+			<div id="at2" class="vert"></div>
+			<div id="at3" class="vert"></div>
+			<div id="at4" class="vert"></div>
+
+			<div id="ac1" class="hor"></div>
+			<div id="ac2" class="hor"></div>
+			<div id="ac3" class="hor"></div>
+			<div id="ac4" class="hor"></div>
+
+		<!--- Ovo je Beta   ======== -->	
+
+			<div id="bp1" class="hor"></div>
+			<div id="bp2" class="hor"></div>
+			<div id="bp3" class="hor"></div>
+			<div id="bp4" class="hor"></div>
+
+			<div id="bd1" class="hor"></div>
+			<div id="bd2" class="hor"></div>
+			<div id="bd3" class="hor"></div>
+			<div id="bd4" class="hor"></div>
+
+			<div id="bt1" class="hor"></div>
+			<div id="bt2" class="hor"></div>
+			<div id="bt3" class="hor"></div>
+			<div id="bt4" class="hor"></div>
+
+			<div id="bc1" class="hor"></div>
+			<div id="bc2" class="hor"></div>
+			<div id="bc3" class="hor"></div>
+			<div id="bc4" class="hor"></div>
+
+		<!--- Ovo je Gama   ======== -->
+			
+
+			<div id="gp1" class="vert"></div>
+			<div id="gp2" class="vert"></div>
+			<div id="gp3" class="vert"></div>
+			<div id="gp4" class="vert"></div>
+		
+			<div id="gd1" class="hor"></div>
+			<div id="gd2" class="hor"></div>
+			<div id="gd3" class="hor"></div>
+			<div id="gd4" class="hor"></div>
+
+			<div id="gt1" class="vert"></div>
+			<div id="gt2" class="vert"></div>
+			<div id="gt3" class="vert"></div>
+			<div id="gt4" class="vert"></div>
+
+			<div id="gc1" class="hor"></div>
+			<div id="gc2" class="hor"></div>
+			<div id="gc3" class="hor"></div>
+			<div id="gc4" class="hor"></div>
+		<!--- Ovo su dubinice- - - - - -  - =-->
+		<div id="malacka"></div>
+			<div id="strana1" class="stran"></div>
+			<div id="strana2" class="stran"></div>
+			<div id="strana3" class="stran"></div>
+			<div id="strana4" class="stran"></div>
+			<div id="strana5" class="stran"></div>
+			<div id="strana6" class="stran"></div>
+		</div>
+		</div>
+
+
+			
+
+
+
+	</div>
+	<div id="kontrole">
+		<div id="jedan" class="kont" onclick="prvi()">Angle 1</div>
+		<div id="dva"	class="kont" onclick="drugi()">Angle 2</div>
+		<div id="tri"	class="kont" onclick="treci()">Angle 3</div>
+		<div id="cetiri" class="kont" onclick="cetvrti()">Angle 4</div>
+		<div id="cka" onclick="cka()" class="kont">Bad cube</div>
+		<div id="ucka" onclick="ucka()" class="kont">Good cube</div>
+		<div id="rocka" onclick="rocka()" class="kont">Break up</div>
+	</div>
+	<div id="levo" onclick="desno()">
+		<img height="60px" width="60px" src="http://www.clker.com/cliparts/3/6/c/b/11949941671787360471rightarrow.svg.hi.png">
+	</div>
+	<div id="desno" onclick="levo()">
+		<img height="60px" width="60px" src="http://www.clker.com/cliparts/3/6/c/b/11949941671787360471rightarrow.svg.hi.png">
+	</div>
+	<div id="gore" onclick="gore()">
+		<img height="60px" width="60px" src="http://www.clker.com/cliparts/3/6/c/b/11949941671787360471rightarrow.svg.hi.png">
+	</div>
+	<div id="dole" onclick="dole()">
+		<img height="60px" width="60px" src="http://www.clker.com/cliparts/3/6/c/b/11949941671787360471rightarrow.svg.hi.png">
+	</div>
+
+</body>
+</html>

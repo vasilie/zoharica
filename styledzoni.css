@@ -1,0 +1,66 @@
+#naslov1 {
+
+	background-color: #424242;
+	color:white;
+	padding: 20px;
+	width: 700px;
+	float: left;
+	height: 500px;
+}
+
+
+body, a, html {
+
+	margin: 0px;
+
+}
+
+#container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+
+}
+
+#header {
+	
+ background-color: #f2f2f2;
+ color:white;
+
+
+}
+
+#header li {
+	text-align: left;
+	text-decoration: none;
+	display: inline;
+}
+
+a {
+	margin-left: 20px;
+	text-decoration: none;
+
+}
+
+li img{
+	
+	margin-left: 0px;
+	height: 25px;
+
+}
+
+#nav {
+	background-color: #C87878;
+	float: right;
+	width: 200px;
+
+}
+#footer {
+
+
+	background-color: black;
+	color:white;
+	text-align: right;
+	padding: 4px;
+	clear: both;
+	}
