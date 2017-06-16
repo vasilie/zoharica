@@ -262,7 +262,7 @@
 		//-------------- Konekcija SQL, uzima informacije iz zohari, i ubacuje u  promenljive--------------------		$servername = "localhost";
 		$username = "root";
 		$password = "winstonblue";
-		$password = "";
+		// $password = "";
 
 		// Create connection
 		$db = new mysqli($servername, $username, $password);
