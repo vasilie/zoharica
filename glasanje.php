@@ -270,7 +270,7 @@
 		if ($db->connect_error) {
 		    die("Connection failed: " . $db->connect_error);
 		}
-		echo "Connected successfully";
+		// echo "Connected successfully";
 
 
 					// $db = mysql_connect('localhost' , 'zoharica', 'winstonblue' , "zoharica");
