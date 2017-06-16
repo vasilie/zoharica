@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 16, 2017 at 11:39 PM
+-- Generation Time: Jun 16, 2017 at 11:57 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -44,29 +44,6 @@ INSERT INTO `glasao` (`id`, `ime`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `vreme`
---
-
-CREATE TABLE IF NOT EXISTS `vreme` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `vreme` timestamp NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
-
---
--- Dumping data for table `vreme`
---
-
-INSERT INTO `vreme` (`id`, `vreme`) VALUES
-(1, '0000-00-00 00:00:00'),
-(2, '0000-00-00 00:00:00'),
-(3, '0000-00-00 00:00:00'),
-(4, '2017-06-16 19:14:56'),
-(5, '2017-06-16 19:14:59');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `vremeg`
 --
 
@@ -80,7 +57,19 @@ CREATE TABLE IF NOT EXISTS `vremeg` (
 --
 
 INSERT INTO `vremeg` (`id`, `vreme`) VALUES
-(1, 1497648937);
+(1, 1497650189);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `vremem`
+--
+
+CREATE TABLE IF NOT EXISTS `vremem` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `vreme` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -101,7 +90,7 @@ CREATE TABLE IF NOT EXISTS `zohari` (
 
 INSERT INTO `zohari` (`id`, `ime`, `poeni`) VALUES
 (1, 'Nesica', 1),
-(2, 'Dzoni', 2),
+(2, 'Dzoni', 4),
 (3, 'Vasilie', 2),
 (4, 'Manu', 1),
 (5, 'Adam', 2),

@@ -470,7 +470,7 @@ if (isset($_POST{"glasanje"})) {	$zohari=$_POST{"glasanje"};
 
 				echo $pozdrav;
 				$vreme=date('H');
-				$result1 = mysqli_query($db, "SELECT * FROM vreme WHERE id=1 LIMIT 1");
+				$result1 = mysqli_query($db, "SELECT * FROM vremem WHERE id=1 LIMIT 1");
 				// var_dump($result1);
 				$row = mysqli_fetch_assoc($result1);
 				$vremesad = time();
